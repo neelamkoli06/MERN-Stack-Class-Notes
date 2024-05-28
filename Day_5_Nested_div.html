@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            height: 200px;
+            width: 50%;
+            background-color: aqua;
+            float: left;
+
+        }
+
+        .box1_01 {
+            height: 100%;
+            width: 50%;
+
+            background-color: rgb(248, 236, 8);
+            float: left;
+        }
+
+        .box1_02 {
+            height: 100%;
+            width: 50%;
+            float: left;
+            background-color: cadetblue;
+        }
+
+        /* ****************************************************** */
+
+        .box2 {
+            height: 200px;
+            width: 50%;
+            background-color: rgb(246, 68, 181);
+            float: left;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 2 partition -->
+
+    <div class="box1">
+
+        <!-- nested div -->
+        <!-- 2 partition -->
+        <div class="box1_01">
+
+            <!-- nested div -->
+            <div style="height:50%;width:50%;float: left;background-color: black;"></div>
+            <div style="height:50%;width:50%;float: left;background-color: rgb(153, 0, 0);"></div>
+
+            <div style="height:50%;width:50%;float: left;background-color: rgb(46, 34, 215);"></div>
+            <div style="height:50%;width:50%;float: left;background-color: rgb(23, 152, 250);"></div>
+
+        </div>
+        <div class="box1_02"></div>
+    </div>
+
+
+    <div class="box2"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+
+            /* vh-viewport height: ; */
+            height: 100vh;
+            width: 100%;
+            background-color: pink;
+            float: left;
+        }
+
+        .headerSection {
+            height: 70px;
+            width: 100%;
+            background-color: orange;
+            float: left;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+
+        .menu {
+            height: 70px;
+            width: 100%;
+            background-color: black;
+            float: left;
+        }
+
+        .menu ul {
+            height: 100%;
+            width: 100%;
+            background-color: darkslategray;
+
+            text-align: center;
+        }
+
+        .menu ul li {
+
+            /*  */
+            display: inline-block;
+            margin-left: 40px;
+            margin-top: 25px;
+        }
+
+        .menu ul li a {
+            color: white;
+
+            /* to remove underline */
+            text-decoration: none;
+        }
+
+        /* *********************************** */
+        .section1 {
+            height: 350px;
+            width: 45%;
+            background-color: aqua;
+            float: left;
+        }
+
+        .section2 {
+            height: 350px;
+            width: 45%;
+            background-color: blueviolet;
+            float: left;
+        }
+
+        /* ********************************* */
+
+        .footersection {
+            height: 70px;
+            width: 100%;
+            background-color: black;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Semantic Elements -meaningfull tag-->
+
+    <!-- A semantic element clearly describes its meaning to both the browser and the developer. -->
+
+
+    <!-- Used to understand application layout and in which section we are working -->
+
+    <!-- helful for bug fixing , styling purpose -->
+
+
+    <!-- SEO - web site ranking -->
+
+
+    <!-- form,table -->
+
+    <main></main>
+    <header></header>
+    <section></section>
+    <nav></nav>
+    <footer></footer>
+    <aside></aside>
+
+
+    <figure>
+        <img src="" alt="">
+        <figcaption></figcaption>
+    </figure>
+
+    <article></article>
+    <address></address>
+
+
+
+
+    <!-- Non-Semantic Elements- meaning less tag i.e there is no meaning
+    
+    div,span....
+    -->
+
+
+    <!-- <main>
+             <header>
+                     <div></div>
+                     <div></div>
+                     <div></div>
+             </header>
+
+            <nav>
+                
+            </nav>
+
+            <section></section>
+            <section></section>
+            <section></section>
+
+            <aside></aside>
+
+            <footer></footer>
+    </main> -->
+
+
+    <main class="container">
+
+        <header>
+            <div class="headerSection">
+                <h2>Header Section</h2>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact US</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="section1">
+                <h2>Section 1</h2>
+            </div>
+            <div class="section2">
+                <h2>Section 2</h2>
+            </div>
+
+        </section>
+
+        <aside>
+            <div style="height: 350px;width:10%;background-color: rgb(182, 41, 238);float: left;">Aside Section</div>
+        </aside>
+
+        <footer>
+            <div class="footersection">
+                <h2>Footer Section</h2>
+            </div>
+        </footer>
+
+    </main>
+
+
+</body>
+
+</html>

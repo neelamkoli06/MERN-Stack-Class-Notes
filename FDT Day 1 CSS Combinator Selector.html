@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        /* descendant selector
+        
+        select all html elements which are specified into that element
+
+        */
+        /* div p {
+            color: tomato;
+        } */
+
+
+        /* .box1 p{
+
+        } */
+
+
+        /* *********************************************** */
+
+        /* 2 child selector-  > 
+         select all html element which are direct childrens of specified element
+
+        */
+
+        /* div>p {
+            color: navy;
+        } */
+
+
+        /* *************************************************** */
+
+        /* 3  General sibling selector-  ~ (tilde)
+        
+select all html elements which are siblings of specified elements
+        */
+
+        /* div~p {
+            color: brown;
+        } */
+
+
+
+        /* ************************************************************* */
+
+        /* 4. Adj sibling selector */
+
+        /* + - select html elemnt which are immediate sibling */
+
+        div+p {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Combinator selector
+    
+    1. Descendant selector- indicate by spacing
+
+    select all html elements which are  specified into that element
+
+
+    2.child selector- > - select all html element which are direct childrens of specified element
+
+
+    3. General sibling sel- ~ - select all html elements which are siblings of specified elements
+
+    4. Adjecent sibling- + - select html element which are immediate sibling of that specified element
+    -->
+
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, hic.</p>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nihil.</p>
+        </section>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, velit.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, velit.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, velit.</p>
+
+
+    <h1>hello Welcome To The Modern CSS</h1>
+
+
+    <!-- ************************************************************** -->
+
+
+
+</body>
+
+</html>

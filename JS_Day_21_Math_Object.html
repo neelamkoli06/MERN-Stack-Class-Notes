@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button onclick="demo()"></button> -->
+
+    <!-- <button id="btn1">btn1</button> -->
+
+    <script>
+
+        // function demo() {
+
+        // }
+
+        // btn1.addEventListener('click', () => {
+        //     alert('Hello ')
+        // })
+
+        // ***************************************************************************
+
+        // math object
+        //to perform mathimatical operations
+
+
+        let result = Math;
+        console.log(result);
+
+        //PI
+        console.log(Math.PI)//3.14
+        console.log(Math.LN2);
+        console.log(Math.LN10);
+
+
+
+        // Methods
+
+        // min-return minimum number from a given expressesion 
+        // max-return max value
+
+        console.log(Math.min(20, 40, 100, 400, 350, 45, 70, 90, 100));//20
+        console.log(Math.max(20, 40, 100, 400, 350, 45, 70, 90, 100));//400
+
+
+        // array
+
+        const arr = [100, 3000, 3200, 450, 650, 120, 340, 890, 2500];
+        console.log(Math.min(arr));//
+
+        // **********************************************************************
+
+        //Modern JS
+
+        //...spread operator- extract values from a given array
+        //used to copy values from one object to another objet
+
+        console.log(Math.min(...arr));
+        console.log(Math.max(...arr));
+
+        // console.log(...arr);
+
+        // **********************************************************
+
+        // round()-return rounded value - >.5 -return largest  integer  <.5 - return smallest integer
+        // floor()- return nearest smallest integer value
+        // ceil()- return nearest largest integer value
+
+
+        var a = 23.56;
+        console.log(Math.round(a));//24
+        console.log(Math.floor(a));//23
+        console.log(Math.ceil(a));//24
+
+
+        console.log(Math.round(55.23))//55
+        console.log(Math.ceil(55.23))//56
+        console.log(Math.floor(55.23))//55
+
+
+        console.log(Math.floor(-44.45));//-45
+        console.log(Math.ceil(-44.45));//-44
+
+        // ********************************************************************
+
+        // Returns the nearest single precision float representation of a number.
+        console.log(Math.fround(23.1));
+
+        // ********************************************************
+
+
+        // sqrt()
+        // cbrt()
+        // pow(x,y)
+
+        console.log(Math.sqrt(25));//5
+        console.log(Math.sqrt(625));//25
+        console.log(Math.sqrt(144));//12
+
+
+        console.log(Math.cbrt(27))//3 3*3*3
+        console.log(Math.cbrt(8))//2
+        console.log(Math.cbrt(625))//
+
+
+        // pow
+        console.log(Math.pow(3, 2));//9
+        console.log(Math.pow(10, 3));//1000
+
+        //exponentation op  **
+        console.log(10 ** 3);//1000
+
+        // ******************************************************************8
+
+        // trunc- remove decimal values and return 
+        console.log(Math.trunc(23.23));//23
+        console.log(Math.trunc(23.83));//23
+
+        // **********************************************************************
+
+
+        // random method- Used to generate random number
+        //Returns a pseudorandom number between 0 and 1.
+
+        console.log(Math.random());//
+
+        // 2 digit
+        console.log(Math.random() * 100);
+
+        console.log(Math.trunc(Math.random() * 100));
+
+
+        // 4 digit otp generate 
+
+        alert(Math.floor(Math.random() * 10000));
+
+
+        // *********************************************
+
+        // 12-4- GA
+        // 4-12- GE
+        // 12-5- GN
+        // 5-12- GM
+        // Headline- GM/ GN /GA/ GE
+        // Realated Image
+        // Time
+
+
+        // 2
+
+        // Take a Month no from user
+
+        // 1-Jan
+        // 12-Dec
+        // display alert()
+
+
+
+    </script>
+</body>
+
+</html>

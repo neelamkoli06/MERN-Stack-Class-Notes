@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Forms
+    
+
+        To Get data from users- Personal Information,Educational info, Financial Info, Employment Info
+
+        HTML Form to fetch data from Users
+
+    -->
+
+    <!-- Attributes
+    
+        action-action to performed when we submit our form
+        enctype=to upload  files and document eg. audio,video, images,pdf,any type of doc or files
+
+
+        method=get/post
+        http method-
+
+
+        https- Network Prtocol
+        enable communication between client and server
+
+        client sends request to the server and server response to the client 
+
+
+        https method
+
+        get-
+
+        data pass through url
+        visible
+        sharable
+
+        limited data we can pass- string,number....
+
+        Not secure for personal info
+
+
+
+        post-
+
+        data pass through body
+
+        hidden data
+
+
+        not visible
+        secure
+
+        here credentials and personal info we can pass
+
+        unlimited data we can  pass- upto 8MB data- Any type of data      
+
+
+    -->
+    <form action="index.js" enctype="multipart/form-data" method="get/post">
+
+        <fieldset>
+
+            <!-- title -->
+            <legend>Personal Information</legend>
+
+
+            <!-- **************************************************** -->
+            <label for="username">Enter Your Name</label>
+
+            <!-- type - which type of data we are fetching
+
+                type="text/email/password/date/time/color/radio/checkbox/"
+                select 
+                file
+
+                range/color/search/submit/reset/hidden/week/url
+
+
+                name=used to stored data in data base -unique and used in JS also
+
+                id=must be unique - Used in JS to fetch data and to perform validations 
+                and to perform multiple operations on form data
+
+
+
+                Attributes
+
+                type
+                for
+                id
+                name
+                value- to set default value
+
+                file type
+                multiple- used to upload multiple files in input type file 
+             -->
+            <input type="text" name="username" id="username"><br><br>
+
+
+            <label for="">Enter Your Email:</label>
+            <input type="email" name="useremail" id="useremail" value="john@gmail.com"><br><br>
+
+            <label for="">Enter Your Password</label>
+            <input type="password" name="userpass" id="userpass"><br><br>
+
+            <label for="">Enter Your Mobile</label>
+            <input type="number" name="mobile" id="mobile"><br><br>
+
+            <label for="">Book Your Appointment Date</label>
+            <input type="date" name="userAppointDate" id="userAppointDate"><br><br>
+
+            <label for="">Book Your Slot</label>
+            <input type="time" name="" id=""><br><br>
+
+
+            <!-- radio-
+            
+            to choose only one option
+        -->
+            <label for="">Your Gender</label>
+
+            <input type="radio" name="gender" id="" value="Male"><span>Male</span>
+            <input type="radio" name="gender" id="" value="Female"><span>Female</span>
+            <input type="radio" name="gender" id="" value="Prefer Not To Say"><span>Prefer Not To Say</span>
+
+            <br><br>
+
+            <!-- choose only one option -->
+            <label for="">Choose Your Education</label>
+            <select name="" id="">
+                <option value="_Select_">_Select_</option>
+                <option value="BCS/BCA">BCS/BCA</option>
+                <option value="MCS/MCA">MCS/MCA</option>
+                <option value="BE/B-TECH">BE/B-TECH</option>
+                <option value="ME/M-TECH">ME/M-TECH</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            <!-- optgroup -->
+
+            <label for="">Choose Your Technology</label>
+
+            <select name="" id="">
+                <optgroup label="Front End Technology">
+                    <option value="React">React</option>
+                    <option value="Modern JS">Modern JS</option>
+                    <option value="MUI">MUI</option>
+                </optgroup>
+
+                <optgroup label="Backend Technology">
+                    <option value="">NodeJS</option>
+                    <option value="">Python</option>
+                    <option value="">Express JS</option>
+                </optgroup>
+            </select><br><br>
+
+
+
+
+            <!-- multiple options -->
+            <label for="">Choose Your Skills</label>
+            <input type="checkbox" name="skill" id="" value="">React
+            <input type="checkbox" name="skill" id="" value="">ModernJS
+            <input type="checkbox" name="skill" id="" value="MUI">MUI
+            <input type="checkbox" name="skill" id="" value="">NodeJS
+            <input type="checkbox" name="skill" id="" value="">AWS
+            <br><br>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Other Information</legend>
+
+            <label for="">Choose Color</label>
+            <input type="color" name="" id=""><br><br>
+
+            <label for="">Choose Your range</label>
+            <input type="range" value="50" maxlength="100" id="">
+            <br><br>
+
+            <label for="">Upload Your Documents</label>
+            <input type="file" name="" id="">
+            <input type="file" name="" id="" multiple><br><br>
+
+            <label for="">Search Here</label>
+            <input type="search" name="" id=""><br><br>
+
+
+            <!--  -->
+            <label for="">Hidden Data</label>
+            <input type="hidden" name="" id="" value="12345">
+
+            <br><br>
+
+
+            <!-- ********************************** -->
+
+            <!-- long input field-->
+            <label for="">Enter Your Address/ Send Msg</label><br>
+            <textarea name="" id="" style="width:100%;height:50px"></textarea>
+            <br>
+            <br>
+
+
+            <!-- form submit -->
+            <input type="submit" name="" id="">
+            <input type="submit" name="" id="" value="Submit Form">
+            <input type="reset" name="" id="">
+            <button type="submit">Submit Form</button>
+            <button></button>
+
+            <button type="button"></button>
+        </fieldset>
+
+    </form>
+
+
+
+    <!-- URL decoding -->
+
+    <!-- https- network protocol
+        //www.flipkart.com- domain
+        /apple-iphone-15-plus-black-256-gb/p/itm4b0608e773fc5-search
+        ? -
+
+        &- variables
+        ?pid=MOBGTAGPWKT2VSBB
+        &lid=LSTMOBGTAGPWKT2VSBBYV0FGC
+        &marketplace=FLIPKART
+        &q=iphone+15+plus
+        &store=tyy%2F4io
+        &srno=s_1_1
+        &otracker=AS_QueryStore_OrganicAutoSuggest_1_7_sc_na_na
+        &otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_sc_na_na
+        &fm=organic
+        &iid=60677e73-b2d8-432d-8299-45334a421b03.MOBGTAGPWKT2VSBB.SEARCH
+        &ppt=hp
+        &ppn=homepage
+        &ssid=pelyqcfoxs0000001716359933526
+        &qH=72d286a378c732d0 -->
+
+
+    <!-- ******************************************************** -->
+
+    <!-- https:-NP
+        SSL-certificate
+        //www.google.com-domain
+        /search-search
+        
+        ?q=form+in+html+w3schools- query
+        &oq=form+in+html+w3
+        
+        & - Varaibles
+        &gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyBggAEEUYOTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCAgJEAAYFhge0gEJMjUyODlqMGo3qAIAsAIA
+        &sourceid=chrome
+        &ie=UTF-8 -->
+
+    <!-- ************************************************** -->
+    <!-- 
+    https:
+    //www.flipkart.com/
+    fastrack-revoltt-fs1-pro-world-s-first-1-96-super-amoled-highest-resolution-bt-calling-smartwatch/p/itmc42d5fa51a930
+    ?pid=SMWGZ835PYX4HJGR
+    &lid=LSTSMWGZ835PYX4HJGRCFZKL9
+    &marketplace=FLIPKART
+    &store=ajy%2Fbuh&srno=b_1_1
+    &otracker=browse
+    &fm=organic
+    &iid=en_Q7lZ3Hsu1lC21tlrAEw_Ups_V2zqo6EP-2ehsygq-Yi78ObtOUZDUkSHqrK2ckCljNFNItnHu4ZYmiBqms4NWw%3D%3D&ppt=None
+    &ppn=None
+    &ssid=zglhuzz6280000001716360728344 -->
+</body>
+
+</html>

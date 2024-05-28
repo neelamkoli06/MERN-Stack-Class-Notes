@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- marquee tag -->
+    <!-- slideshow/headlines -->
+
+    <!-- Attributes
+    
+    
+        direction- to change the direction
+        direction=left(by default)/right/up/down
+
+        behavior= to change the behavior of marquee tag
+        behavior=scroll(by default)/alternate/slide
+
+        scrollamount- to increase the speed  - 0-,10,15.......any valuehow
+
+        scrolldelay=to reduce the speed - by default 85
+
+        loop=how many times u want to perform this operation
+
+        height=
+        width=
+        bgcolor="color name"
+    -->
+
+    <marquee direction="right" behavior="alternate" scrollamount="20">
+        <h1>Welcome To The Marquee Tag</h1>
+    </marquee>
+
+    <marquee behavior="alternate" direction="up" scrollamount="15" height="400px" width="100%" bgcolor="orange" onmouseover="this.stop()" onmouseleave="this.start()">
+        <marquee behavior="" direction="right"  onmouseover="this.stop()" onmouseleave="this.start()">
+            <img src="./Assests/Image/a1.gif" alt="" height="250px" width="250px" >
+        </marquee>
+    </marquee>
+
+
+</body>
+
+</html>
