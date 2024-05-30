@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .transition_box {
+            height: 400px;
+            width: 400px;
+            /* background-image: linear-gradient(orange, white, green); */
+
+            background-color: orange;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            margin:100px auto;
+
+
+
+            /* ************************************************ */
+            /* transition */
+            transition-property:all;
+            transition-duration: 4s;
+
+            /* transition-delay: 5s; */
+
+            
+            transition-timing-function: ease;
+            transition-timing-function: ease-in;
+            transition-timing-function: ease-out;
+            transition-timing-function: ease-in-out;
+
+            transition-timing-function: linear;
+
+
+            /* shorthand porperty */
+            transition: all 5s ease-in;
+            
+        }
+
+        .transition_box:hover{
+            /* background-image: linear-gradient(rgb(228, 4, 4),pink,magenta); */
+
+            background-color: red;
+            width:100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Transition-  changes and executes css properties smoothly over spcific duration -->
+
+    <div class="transition_box">
+    </div>
+</body>
+
+</html>

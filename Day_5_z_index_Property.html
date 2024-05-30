@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+
+        .box1{
+            height:400px;
+            width:400px;
+            float: left;
+            background-color: brown;
+
+            position:absolute;
+            top:100px;
+            left:100px;
+
+            /* high priority */
+            z-index: 1;
+        }
+        
+        .box2{
+            height:400px;
+            width:400px;
+            float: left;
+            background-color: rgb(174, 10, 29);
+
+
+            position: absolute;
+            top: 150px;
+            left:150px;
+
+
+            z-index: -1;
+        }
+
+        
+        .box3{
+            height:400px;
+            width:400px;
+            float: left;
+            background-color: rgb(178, 28, 208);
+
+            position: absolute;
+            top:200px;
+            left:200px;
+
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- z-index - Used to overlapping one element to another element
+    
+        priority change of a html content
+        z-index - 1 or 999
+
+        lower priority - -1
+
+    -->
+
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    
+</body>
+</html>

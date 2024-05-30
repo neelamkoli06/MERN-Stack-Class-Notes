@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .section1 {
+            height: 400px;
+            width: 400px;
+            float: left;
+            background-color: purple;
+            
+        }
+
+        .section2 {
+            height: 400px;
+            width: 400px;
+            float: left;
+            background-color: rgb(252, 24, 96);
+
+
+            /* move elements from according to its window screen or parent element--> */
+            /* position absoulte-  */
+
+            position: absolute;
+            top: 100px; 
+            left: 100px;
+            /* right:0px;
+            bottom: 0px; */
+        }
+
+
+        .box1{
+            height:100px;
+            width:100px;
+            border-radius: 50%;
+            background-color: rgb(44, 99, 217);
+
+            /* position: relative; */
+            position: absolute;
+            top:100px;
+            left:100px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Absolute Positioning-
+    
+    move elements from according to its window screen or parent element-->
+
+
+    <div class="section1"></div>
+    <div class="section2">
+        <div class="box1"></div>
+    </div>
+
+</body>
+
+</html>

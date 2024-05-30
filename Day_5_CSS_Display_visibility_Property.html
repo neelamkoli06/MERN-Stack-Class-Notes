@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .box1 {
+            height: 400px;
+            width: 400px;
+            background-color: cadetblue;
+            float: left;
+        }
+
+        .box2 {
+            height: 400px;
+            width: 400px;
+            background-color: rgb(253, 171, 17);
+            float: left;
+
+
+            /* display-  remove from its original space and also remove its styling part 
+            i.e height,width i.e overlapping other elements onto it  */
+            /* display: none;
+
+            display: block; */
+
+            display: inline-block;
+            display: flex;
+            display: table;
+            display: table-column;
+            display: table-row;
+
+
+            /* space remains as it is i.e just hide the html elments box */
+            visibility: hidden;
+            visibility: visible;
+        }
+
+
+        .box3 {
+            height: 400px;
+            width: 400px;
+            background-color: rgb(79, 25, 228);
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+
+</body>
+
+</html>

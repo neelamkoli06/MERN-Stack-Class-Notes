@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height:200vh;
+            width:100%;
+            float: left;
+            background-color: pink;
+        }
+
+        .box1{
+            height:70px;
+            width:100%;
+            float: left;
+            background-color: aqua;
+
+            position: fixed;
+            top:0;
+        }
+
+        .waBox{
+            height: 70px;
+            width:70px;
+            border-radius: 50%;
+            /* background-color: green; */
+            float: left;
+
+
+            position: fixed;
+            bottom: 50px;
+            right:50px;
+
+        }
+
+        .waBox i{
+            color:green;
+            font-size: 40px;
+            background-color: black;
+            padding:7px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- fixed positioning-
+    
+    html element fixed to the window-->
+
+
+    <div class="container">
+        <div class="box1"></div>
+
+       
+    </div>
+
+
+    <div class="waBox">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+
+    <div style="height: 500px;width:100%;background-color: orange;float: left;"></div>
+    
+</body>
+</html>

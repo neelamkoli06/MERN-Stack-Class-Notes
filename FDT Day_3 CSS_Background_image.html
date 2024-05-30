@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 500px;
+            width: 100%;
+            /* background-color: aqua; */
+
+
+            /* background_image */
+            background-image: url('./a31.jpg');
+
+            /* backgrund-image:x-axis(width) y-axis(height) */
+            /* background-size: 500px 400px; */
+            background-size: 100% 100%;
+
+
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+
+            background-position: center center;
+            background-position: center left;
+            background-position: center bottom;
+            background-position: top right;
+            background-position: bottom left;
+
+            /* ******************************* */
+
+            /* shorthand property */
+
+            background: url(./a31.jpg) no-repeat center center/cover;
+            background-size: 100% 100%;
+
+            float: left;
+
+
+            /* fixed image to window screen */
+            background-attachment: fixed;
+        }
+
+        .container h1 {
+            color: orange;
+            text-align: center;
+
+            padding-top: 100px;
+            padding: 50px;
+        }
+
+        .hsla_effect {
+            height: 100%;
+            width: 100%;
+            background-color: hsla(0, 0%, 0%, 0.5);
+            float: left;
+        }
+
+
+        /* ******************************* */
+        .box1 {
+            height: 500px;
+            width: 100%;
+            background-color: orchid;
+            float: left;
+        }
+
+        .box2 {
+            height: 500px;
+            background-color: aqua;
+            width: 100%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box1"></div>
+
+
+    <div class="container">
+        <div class="hsla_effect">
+            <h1>Welcome To The Modern Web Development World!!!!!</h1>
+        </div>
+    </div>
+    
+
+
+    <div class="box2"></div>
+
+
+
+</body>
+
+</html>

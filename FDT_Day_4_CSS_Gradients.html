@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {}
+
+        .gradientBox {
+            height: 80vh;
+            width: 90%;
+            background: url('./a31.jpg') no-repeat center center/cover;
+            background-size: 100% 100%;
+
+            margin: 50px auto;
+            box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+
+            /* mixture of color */
+
+            /* gradient effects */
+
+            /* background-image: linear-gradient();
+            background-image: radial-gradient();
+            background-image: conic-gradient(); */
+
+
+            /* linear gradient -apply color staright forward i.e in a linear way - from top */
+
+            background-image: linear-gradient(orange, white, green);
+            /* background-image: linear-gradient(orange 50%,white,green); */
+            background-image: linear-gradient(to right, orange, white, green);
+
+
+            /* radial gradient */
+            /* defined by center */
+
+            background-image: radial-gradient(orange, white, green);
+            background-image: radial-gradient(rgb(21, 15, 4) 30%, white 10%, green);
+
+            /* background-image: radial-gradient(farthest-side at 50%,orange,white,green);
+            background-image: radial-gradient(closest-side at 30%,orange,white,green); */
+
+
+            /* conic gradient- spread equally from center
+
+            by default 0 deg
+             */
+
+            background-image: conic-gradient(orange, white, green);
+            background-image: conic-gradient(orange, white, green, red, pink);
+            background-image: conic-gradient(orange 30%, white, green);
+
+            background-image: conic-gradient(orange 120deg, white, green);
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Gradient Effects in a CSS -->
+
+    <!-- Mixture of colors -->
+
+
+    <div class="gradientBox"></div>
+</body>
+
+</html>
