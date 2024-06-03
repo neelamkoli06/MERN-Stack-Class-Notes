@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        
+        /* cursor */
+        /* filter */
+        /* scroll-behavior */
+        /* object-fit */
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+        img {
+
+            filter: blur(0px);
+
+            /* 0-100% */
+            /* filter: brightness(60%); */
+
+            /* gray */
+            /* filter: contrast(0%); */
+
+
+            filter: grayscale(100%);
+
+            filter: saturate(50%);
+
+            filter: drop-shadow(2px 2px 3px red);
+
+
+            filter: invert(100%);
+            /* filter: sepia(); */
+            filter: opacity(1);
+
+
+
+            /*  object fit- fit the images or content according to height and width*/
+
+            object-fit: cover;
+            /* object-fit: contain; */
+
+
+
+            cursor: pointer;
+            cursor: progress;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="./a.jpg" alt="">
+
+    <img src="./a31.jpg" alt="" height="300px" width="100%">
+
+
+
+    <br>
+    <!-- cursor:pointer/loading/progress/help /move/text/zoom-in/zoom-out-->
+    <button style="cursor:zoom-in;">Click Here</button>
+
+    <br><br>
+
+    <hr>
+</body>
+
+</html>

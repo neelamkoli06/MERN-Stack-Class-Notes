@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        @media screen {
+            
+        } */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 200px;
+            width: 100%;
+            background-color: orange;
+        }
+
+
+
+        /* mobile devices - 0-767px */
+        @media screen And (max-width:767px) {
+
+            /* code */
+
+            .container {
+                background-color: aqua;
+            }
+
+        }
+
+        /* tablet devices - >767px And <927px */
+        @media screen And (min-width:767px) {
+            .container {
+                background-color: brown;
+            }
+        }
+
+
+        /*mini laptop - >927px And <1200px */
+        @media screen And (min-width:927px) {
+
+            .container {
+                background-color: magenta;
+            }
+
+        }
+
+
+        /* large screen */
+
+        /* >1200px */
+        @media screen And (min-width:1200px) {
+
+            .container {
+                background-color: blueviolet;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Media query-  To build responsive web application to all devices
+    
+        i.e According to devices proper design
+
+        desktop
+        laptop
+        tablet
+        mobile
+
+        mobile- 0-767px
+
+        tablet- >767
+
+        laptop->927px
+
+        large screen - >1200px
+
+        *******************************************************
+
+        media types
+
+        screen- media query to all screen devices- mobile,laptop,desktop,tablet
+        all- all media type  devices
+        print-print devices or screen reader
+
+        @media screen{
+
+        }
+    -->
+
+
+    <div class="container"></div>
+
+
+</body>
+
+</html>

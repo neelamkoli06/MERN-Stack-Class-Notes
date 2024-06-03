@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: aquamarine;
+
+        }
+
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            height: 300px;
+            width: 16.66%;
+            float: left;
+            background-color: cadetblue;
+        }
+
+        .box2 {
+            background-color: blueviolet;
+        }
+
+        .box3 {
+            background-color: tomato;
+        }
+
+        .box4 {
+            background-color: purple;
+        }
+
+        .box5 {
+            background-color: teal;
+        }
+
+        .box6 {
+            background-color: slateblue;
+        }
+
+
+        /* ********************************************************** */
+
+        /* mobile devices- 0-767px */
+        /* 1 box per row */
+        @media screen And (max-width:767px) {
+
+            /* code */
+
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6 {
+                width: 100%;
+            }
+
+        }
+
+
+        /* tablet devices */
+
+        /* >767px and <927px */
+        @media screen And (min-width:767px) {
+
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6 {
+                width: 50%;
+            }
+
+        }
+
+
+        /* laptop devices ->927px And <1200px */
+
+
+        /* ways to write media query */
+
+        /* @media screen And (min-width:927px) */
+        /* @media (min-width:927px) And (max-width:1200px) { */
+        @media screen And (min-width:927px) And (max-width:1200px) {
+
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6 {
+
+                width: 33.33%;
+            }
+
+        }
+
+
+        /* large screen */
+
+        /* >1200px */
+        @media screen And (min-width:1200px) {
+
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6 {
+
+                width: 16.66%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* @keyframes identifier { */
+            /* animation/ */
+        /* } */
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Media query
+    
+    
+        Large Screen- 6 boxes per row
+        mini-laptop- 3 boxed per row
+        tablet-2 boxes per row
+        mobile- 1 box per row
+
+    -->
+
+ 
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+
+
+</body>
+
+</html>

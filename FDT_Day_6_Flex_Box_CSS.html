@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: pink;
+
+            /* flex property */
+
+            /* flex container */
+            display: flex;
+
+
+            /* horizontally alignment - x-axis */
+            justify-content: center;
+
+            /* justify-content: space-between/space-around/space-evenly/flex-start/flex-end; */
+            justify-content: space-between;
+
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: flex-end;
+
+            justify-content: space-around;
+
+            /* ********************************* */
+
+            /* vertically alignment */
+            align-items: center;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+
+            /* **************************************************** */
+
+            /* to change the flex item direction */
+
+            /* flex-direction: row;(by default) */
+
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            flex-direction: row;
+
+
+            /* responsive flex item on a smaller devices */
+            /* proper layout */
+
+            flex-wrap: wrap;
+            flex-wrap: nowrap;
+
+
+            /* combination of flex direction and flex-wrap */
+            flex-flow: row-reverse wrap;
+            flex-flow: row nowrap;
+        }
+
+
+        .box1 {
+            height: 300px;
+            width: 250px;
+            background-color: aqua;
+
+            /* float: left; */
+        }
+
+        .box2 {
+            height: 300px;
+            width: 250px;
+            background-color: rgb(207, 32, 73);
+
+            /* float: left; */
+
+            
+            /* flex-shrink-   reduce or shrink the size of a flex item on a smaller devices */
+            flex-shrink: 2;
+        }
+
+        .box3 {
+            height: 300px;
+            width: 250px;
+            background-color: rgb(112, 10, 255);
+
+            /* float: left; */
+
+            /* flex-grow- to increase the size of a specific flex item */
+            flex-grow: 1;
+        }
+
+
+        .box4 {
+            height: 300px;
+            width: 250px;
+            background-color: rgb(170, 234, 8);
+
+            /* float: left; */
+
+            flex-grow: 1;
+
+
+            /* align-self- align flex item itself */
+
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Flexbox In CSS -->
+
+    <!-- Flexible box
+
+        The Flexible Box Layout Module, 
+        makes it easier to design flexible responsive layout structure without using float or positioning.
+    
+        Used to give flexible length to flexible items
+
+        it works  2Dimensional   i.e either rowwise or columnwise
+
+       Used to align html elements vertically or horizontally direction
+
+        By default direction - row -horizontally
+    -->
+
+
+
+    <div class="container" id="section1">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+</body>
+
+</html>
