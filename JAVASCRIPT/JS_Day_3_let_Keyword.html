@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- let keyword- Modern JS -->
+
+    <script>
+
+        // used to declared variable
+        let no = 10;
+        console.log(no);
+
+
+        //we can declared variable without initilization
+        let skill;
+        skill = "React JS";
+        console.log(skill);
+
+
+        //we can not redclared variable with same name
+        let empId = 123;
+        // let empId = 345;
+        console.log(empId);        //Identifier 'empId' has already been declared
+
+
+        // we can update value
+        let age = 23;
+        age = 25;
+        alert(age);
+
+
+        //scope
+        // block level scope i,e limited to that block
+
+        let y = 50;
+        console.log(y);//50
+        if (true) {
+            let y = 100;
+            console.log(y);//100
+        }
+
+        console.log(y);//50
+
+// ****************************************************
+
+        let x = 100;
+        console.log(x);//100
+
+        function Demo() {
+            let x = 300;
+            console.log(x);//300
+        }
+        Demo()
+
+        console.log(x);//100
+
+
+    </script>
+</body>
+
+</html>

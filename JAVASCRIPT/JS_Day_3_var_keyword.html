@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- var keyword -->
+
+    <!-- Used to declared JS Variable -->
+    <script>
+
+        var name = "Abhi";
+        // alert(name);
+
+
+        // we can declared variable without initilzation
+        var skill;
+        skill = "Modern JS";
+        console.log(skill);
+
+
+        //we can redclared variable with same name
+
+        var empId = 123;
+        var empId = 345;
+        console.log(empId);
+
+
+        // we can update value
+
+        var empCTC = "20LPA";
+        empCTC = "40LPA";
+        console.log(empCTC);
+
+        // ************************************
+
+        // scope- Global scope
+        var x = 100;
+        console.log(x);//100
+        if (true) {
+            var x = 200;
+            console.log(x);//200
+        }
+        console.log(x);//200
+
+
+        // *****************************************************
+
+        var y = 100;
+        console.log(y);//100
+
+        function Demo() {
+            var y = 400;
+            console.log(y);//400
+        }
+        Demo();
+        console.log(y);//100
+
+
+
+    </script>
+</body>
+
+</html>
