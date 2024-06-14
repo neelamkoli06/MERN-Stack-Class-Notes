@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Data Types
+    
+    
+    PDT-predefined / built in DT
+    int,char,float.double.logn double,bigint,boolean
+
+    NPDT-
+    User defined or derived from PDT
+    array,object,functiono
+
+
+    In JS
+
+    PDT- number,string,boolean,null,undefined,symbol,BigInt
+    NPDT-Array , Object,function
+    -->
+
+    <script>
+
+        // number
+        // let no = 123;
+        let no = 12.3;
+        console.log(no);
+
+        // typeof operator- used to check data type of that specific variable in which stored value
+        console.log(typeof no);//number
+
+        // boolean
+        //true false
+        let isEligible = true;
+        console.log(isEligible);
+        console.log(typeof isEligible);
+
+
+        //string- collection of characters- " " or '';
+        let empName = "Amol";
+        console.log(empName);
+
+        console.log(typeof empName);//string
+
+        // null
+
+        let empCTC = null;
+        console.log(empCTC);
+        console.log(typeof empCTC);//object - as per expert is a bug in a JS
+
+        //empty
+        // let empRole = "";
+        // console.log(empRole);
+        // console.log(typeof empRole);
+
+
+        //undefined
+        //when we try to accessing variable which we declared but not initialized any value - .undefined
+        var skill;
+        console.log(skill);;//undefined
+        console.log(typeof skill);//undefined
+
+
+        //Symbol
+        //similar like number, boolean,string,
+        // called symbol function and always return a unique value
+
+        // symbol()
+
+        //used to passed unique id in a object key which 
+
+        console.log(20 == 20);//true
+        console.log(Symbol(20) == Symbol(20));//false
+
+        // BigInt- long integer
+
+
+        // ********************************************************************************************************
+
+        // NPDT- 
+
+        // user defined
+
+        // Array-
+        // Is a collection of similar or different type of elements
+
+        // we can stored multiple type of element in a single variable
+        // starts indexing from 0
+
+        const arr = [10, "ABC", true, null, [100, 200], { name: 'Pratik' }]
+        console.log(arr);
+
+        //Array is a special type of object in JS
+        console.log(typeof arr);// object
+
+
+        // *********************************************************8
+
+        // Object
+
+        // is a entity having methods and properties
+        // collection of key value pair
+
+        //we can stored large amount of data in  a object
+
+
+        //key:value
+
+        const obj = {
+            // key:value
+            id: 1,
+            empName: 'Shubham',
+            isOnRole: true,
+            EmpSkill: ["React", "AWS", "Modern JS"],
+            empCTC: null,
+
+        }
+
+
+        console.log(obj);
+
+        console.log(typeof obj);//object
+
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
