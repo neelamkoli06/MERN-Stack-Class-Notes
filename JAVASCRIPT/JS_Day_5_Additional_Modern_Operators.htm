@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //typeof - 
+        //Nullish Coalscheing op- ?? -
+
+        // typeof- return data type of that specific value which we stored in a variable
+        console.log(typeof 10);//number
+        console.log(typeof "10");//string
+        console.log(typeof []);//object
+        console.log(typeof {});//object
+        console.log(typeof null);//object
+
+        // always return string
+        console.log(typeof typeof 10);//string
+        console.log(typeof typeof "ABC");//string
+        console.log(typeof typeof undefined);//string
+
+        // ***************************************************
+
+        // Nullish Coalscheing op- ?? -
+
+        //return 1st argument if not nullish (null or undefined)
+
+        // var empId = 1234;
+        // var empId = null;
+        var empId;
+        let empEmail = "john@gmail.com";
+
+        console.log(empId ?? empEmail);//1234
+
+
+        // ************************************************************
+
+        // exponentitation op -  **
+
+        // return power
+
+        // Math.pow()-similar
+
+
+        console.log(10 ** 2);//10^2 -100
+        console.log(10 ** 3);//1000
+        console.log(10 ** 4);//1000
+
+        // ************************************************************
+
+        // ternary operator
+        // alternate if else
+
+        let age = 25;
+        // if(age>=18)
+        // {
+        //     alert("Congarts dear");
+        // }
+
+        // else {
+        //     alert("sorry")
+        // }
+
+
+        // ***********************************************************
+
+        // ternary operator - 
+        // syntax-  condition ? true :false
+
+        let result = age >= 18 ? "Congrats Dear" : "Sorry Come Back";
+
+        // alert(result);
+
+
+        // *******************************************************
+
+        // concatenation op
+
+        //+ 
+        
+
+        console.log(10+10);//20
+        console.log(10+"10");//1010
+        console.log(10+"ABC");//10ABC
+
+
+        console.log(10*10);//100;
+        console.log(10*"10")//100
+        console.log(10/"10");//1
+
+
+        console.log(100+"ABC");//100ABC
+
+
+        // ***************************************
+        // invalid expression
+        // NaN - not a number
+        console.log(100/"ABC");//NaN
+        
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Unary- ++,--
+    Binary 
+
+    var a=10;
+    var b=20;
+
+    var c=a+b;
+
+    a+b-
+    operator- +
+    operand- a , b
+
+    Types of Operators-
+
+    To perform mathimathical , condtional operations
+
+    Arithematic Operators- +,-,*,/(return quotient),%(modules-return reminder)
+    100%20-0
+    100/20-50
+
+    Increment / Decrement- ++ --
+
+    Logical Opeartor- && ||  !
+
+    Assignment Operator- =, -=,+=,*=,/=,%=
+
+
+    Comparasion op- >,<,<=,>= 
+
+    Equality op-  ==,===
+
+
+    Bitwise op- & ,| , ~ (Bitwise Not), ^ (bitwise XOR)
+
+
+    -->
+
+    <!-- Arithematic Operators- +,-,*,/(return quotient),%(modules-return reminder) -->
+
+    <script>
+
+        let a = 50;
+        let b = 30;
+
+        // - + = -
+        // + - = -
+        // + + = +
+        // - -= +
+
+        // higher precedence - * / % than + -
+
+        console.log(a + b);//80
+        console.log(a - b);//20
+        console.log(a * b);//1500
+        console.log(100 / 10);//10-quotient
+        console.log(100 % 10);//0
+
+
+        // 
+
+        console.log(a + b * a);//1550
+        console.log(a + b / 10);//53
+        console.log(a - b / 10);//47
+        console.log(a * b / 10);//150
+
+        // **********************************************************************************
+
+        // increment / decrement
+        // ++ --
+        // pre ++a --a
+        // post a++ a--
+
+        console.log("********")
+
+        // let x = 21;
+        // x++;
+        // console.log(x);
+
+        // let x = 20;
+        // ++x;
+        // console.log(x);//21
+
+
+        // let x=21;
+        // x--;
+        // console.log(x);//20
+
+
+        // let x=22;
+        // // x++;
+        // x--;
+        // console.log(--x);//20
+
+
+        // let x = 15;
+        // console.log(x++);
+
+        // console.log(x);
+
+        // 20 20 21 20
+
+        let y = 20;
+        y++;//21
+        --y;//20
+        console.log(y);//20
+        console.log(y++);//20 - 21
+        y--;//20
+        console.log(++y);//21
+        console.log(y--);//21- 20
+
+        // *****************************************************************************888
+        // Assignment Operator
+        // =,-=,+=,/=,*=, %=
+
+        // var a=a+b;
+        // a+=b;
+
+        // LSV=RSV
+        console.log("********")
+
+        // let p = 20;
+        // let q = p;
+        // console.log(p);//20
+        // console.log(q);//20
+
+
+        let no1 = 100;
+        let no2 = 50;
+
+        console.log(no1 + no2);
+        // no1=no1+no2;
+        console.log(no1 += no2);//150
+
+        // no1=150
+        // no1=no1-no2;
+        console.log(no1 -= no2);//150-50//100
+
+        // no1=100
+        console.log(no1 *= no2);//5000
+
+        // *******************************************************************************
+
+        // compare the 2 values
+
+        // comparsion op- >,<,>=,<=, 
+
+        console.log(100 > 20);//true
+
+        console.log(100 < 100);//false
+        console.log(100 <= 100);//true
+
+
+        // ************************************************
+
+        console.log(20 != 20);//false
+
+        console.log(20 != 100);//true
+
+        // *************************************************************************
+
+        // Equality operator
+        // ==,===
+
+
+        // == - it check only the value
+        // === - it checks theit data types and values also
+
+        console.log("*********");
+
+
+        // let A=20;
+        // let B=100;
+
+        // console.log(A==B);//false
+        // console.log(A===B);//false
+
+
+        // let A=20;
+        // let B=20;
+        // console.log(A==B);//true
+        // console.log(A===B);//true
+
+        let A = 20;
+        let B = "20";
+        console.log(typeof A);
+        console.log(typeof B);
+        console.log(A == B);//true
+
+        console.log(A === B);//false
+
+        // **************************************************************************************
+
+        // Logical Op
+
+        // && || !
+
+        // conditional renedering
+        //used to check 2 or more conditions
+
+
+        // 1-true 0-false
+
+        //  1 && 1= 1
+        //  1 && 0= 0
+        //  0 && 1= 0
+        //  0 && 0= 0
+
+        // Logical OR ||
+
+        // 1 || 0 = 1
+        // 0 || 1 = 1
+        // 1 || 1 = 1
+        // 0 || 0 = 0
+
+
+        var No1 = 30;
+        var No2 = 20;
+        var No3 = 10;
+
+        console.log(No1 > No2 && No1 > No3);// true && true =true
+        console.log(No1 > No2 && No1 < No3);// true && false= false
+
+        console.log(No1 > No2 || No1 < No3);// true || false =true
+
+
+        console.log(No2 <= No1 && No2 >= No3 && No1 <= No2);// true && true && false- false
+
+
+        // !- logical Not
+
+
+        // !- return true when conditions becomes false
+        // !- return false when conditon becomes true
+
+        // *****************************************************************************
+
+        // bitwise op
+
+        // & | ^(XOR) ~(Not)
+        // <<<,<<,>>,>>
+
+
+        console.log(5 & 1);//
+
+        // 5-0101
+        //1 -0001
+        // ____________
+        //  0001 - 1  
+
+        // *****************************************************************************************
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
