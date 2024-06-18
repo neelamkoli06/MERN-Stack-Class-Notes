@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- used to 2 or more conditions at a same time
+     
+    -->
+
+    <script>
+        // if(cond)
+        // {
+
+        // }
+        // else if(cond)
+        // {
+
+        // }else if(cond)
+        // {
+
+        // }
+
+        // else
+        // {
+
+        // }
+
+        // *****************************************************************************
+
+        // let a = +prompt('Enter A Number 1')
+        // let b = +prompt('Enter A Number 2')
+        // let c = +prompt('Enter A Number 3');
+
+        // if (a >= b && a >= c) {
+        //     alert(`${a} is a Bigger No`);
+        // }
+
+        // else if (b >= a && b >= c) {
+        //     alert(`${b} is a Bigger No`);
+        // }
+
+        // else {
+        //     alert(c + " is a Bigger No")
+        // }
+
+
+        // ***********************************************************************************************
+
+        // shopping cart
+        // Take shopAmt from user
+
+        // if shopAmt>=10000 <20000
+        // disc=10
+
+        // shopAmt>=20000  and <30000
+        // disc=20
+
+        // shop>=30000 and <40000
+        // disc=30
+
+        // >=40000
+        // disc=40%
+
+        // else
+        // disc=0
+
+
+
+        // Shop AMount=
+        // Discount = % and Discount Value= 
+        // Your Net Total Amount = 
+
+
+        // ****************************************************8
+
+        let shopAmt = +prompt('Enter Your Shooping Amount')
+        var disc = 0;
+
+        if (shopAmt >= 10000) {
+            disc = 20;
+        }
+        else {
+            disc = 0;
+        }
+
+        document.write(`<h1>Your Shopping Amount Is ${shopAmt}</h1>`);
+
+        var discAmt = shopAmt * disc / 100;
+        document.write(`<h1>You Get A ${disc} % discount and Your Discounted AMount Is <mark> ${discAmt} </mark></h1>`);
+
+        var netTotal = shopAmt - discAmt;
+        document.write(`<h2>Your Net Total Shooping AMount Is <mark>${netTotal}</mark></h2>`)
+
+    </script>
+</body>
+
+</html>

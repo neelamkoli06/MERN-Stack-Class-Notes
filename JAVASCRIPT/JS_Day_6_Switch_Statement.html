@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- switch-
+    
+    used to handle 2 or more cases, operations at a same time easily
+
+
+    i.e Easily Handle multiple cases
+
+    syntax
+    
+    switch(data)
+    { 
+    case1 '':{ }
+
+    case2 '':{}
+
+
+    default:{
+    if not match any case
+    }
+
+    }
+    -->
+
+    <script>
+        let monthNo = +prompt('Enter A Month No');
+
+        switch (monthNo) {
+
+            case 1: alert('January Month');
+                // stops the exeution 
+                break;
+
+            case 2: alert('Feb Month');
+                break;
+
+            case 3: alert('March Month');
+                break;
+            case 8: alert("August Month");
+                break;
+
+            default:
+                { alert("Pls enter a valid month"); }
+
+        }
+        // *********************************************************************************************
+        let no1 = +prompt("Enter A No1");
+        let no2 = +prompt("Enter A No2");
+
+        let operation = prompt(' + , -, /, * , % Pls Select Any Operation U Want To Performed');
+
+        switch (operation) {
+
+            case '+': alert(`${no1} + ${no2} = ${no1 + no2}`);
+                break;
+
+            case '-': alert(`${no1} - ${no2} = ${no1 - no2}`);
+                break;
+
+
+            case '*': alert(`${no1} * ${no2} = ${no1 * no2}`);
+                break;
+
+
+            case '/': alert(`${no1} / ${no2} = ${no1 / no2}`);
+                break;
+
+
+            case '%': alert(`${no1} % ${no2} = ${no1 % no2}`);
+                break;
+
+            default: alert('Pls enter A Valid Operations')
+        }
+
+        // *************************************************************************
+
+
+        // Assignment 2
+
+
+        // take div box and bgcolor=orange
+
+        // ask for user to enter a color name=  VIGBYOR
+
+        // if V- apply color violet to div box
+        // I- indigo
+        // G- green
+
+
+        // style in js
+        // *********************************
+
+        // weekend or weekday 
+
+        // sunday- weekend
+        // thursday- weekday
+        
+
+    </script>
+</body>
+
+</html>
