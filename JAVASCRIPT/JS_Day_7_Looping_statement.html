@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- looping statements 
+     
+    executes a same condition multiple times until it becomes false i.e iterating
+
+    while
+    do while
+    for loop
+
+
+    for in
+    for of
+    for each
+    map
+
+    -->
+
+    <script>
+        // document.write("Hello World 1 <br>");
+        // document.write("Hello World 2 <br>");
+        // document.write("Hello World 3 <br>");
+        // document.write("Hello World 4 <br>");
+        // document.write("Hello World 5 <br>");
+        // document.write("Hello World 6 <br>");
+        // document.write("Hello World 7 <br>");
+        // document.write("Hello World 8 <br>");
+        // document.write("Hello World 9 <br>");
+        // document.write("Hello World 10");
+
+        // *************************************************************************
+
+        // while()- excute same conditions multiple times until it becomes false
+        // while(condition)
+        {
+            //block of code
+        }
+
+
+
+        let a = 0;
+        while (a <= 10) {
+            document.write(a + " Hello World <br>");//10 times
+            a++;//1 2
+        }
+
+        // ****************************************************************************
+
+        // Natural number from upto 100
+        // let b=1;
+        // while(b<=100)
+        // {
+        //     document.write(b+" ");
+        //     b++;
+        // }
+
+        // ************************************************************************************
+
+        // even no 1-50
+
+        // let b = 1;
+        // while (b <= 50) {
+
+        //     // if (!(b % 2)) {
+
+        //     if (b % 2 == 0) {
+        //         document.write(b + " ");//2
+        //     }
+        //     b++;//2
+        // }
+
+        // *********************************************
+
+        let b = 1;
+        let sum = 0;
+        while (b <= 50) {
+
+            if (b % 2 == 0) {
+                document.write(b + "  ");
+                sum += b;
+            }
+
+            b++;
+        }
+
+        document.write("Total sum Is " + sum);//
+
+
+        // ***************************************************************************
+
+        // nested while
+
+        // let x = 1;
+        // while (x <= 15) {
+        //     document.write(`<h2>${x}</h2>`);//1-15
+
+        //     // nested while
+        //     let y = 1;
+        //     while (y <= 10) {
+        //         document.write(y + "  ");//1 2 3 4 5 6 7 8 9 10
+        //         y++;
+        //     }
+
+        //     x++;
+        // }
+
+        // ************************************************************************************
+
+        // table print - 2 - 15
+
+
+        document.write(`<table border="2" width="100%" cellspacing="0" cellpadding="10">`)
+        let x = 2;
+        while (x <= 15) {
+
+            document.write("<tr>");
+
+            document.write(`<h3>${x}</h3>`);//3
+
+            let y = 1;
+            while (y <= 10) {
+                document.write(`<td> ${x * y} </td> `);//3*1=3 3*2= 
+                y++;
+            }
+
+            x++;
+
+
+            document.write("</tr>")
+        }
+
+
+        document.write("</table>")
+
+    </script>
+
+</body>
+
+</html>

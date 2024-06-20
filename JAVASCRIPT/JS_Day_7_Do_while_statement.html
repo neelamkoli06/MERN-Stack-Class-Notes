@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- do while -->
+
+    <!-- Executes at least once if conditions becomes wrong also
+     
+
+    syntax
+do
+{
+//execute at least once
+}while(condition)
+
+    -->
+    <script>
+
+        // variable init
+        let a = 1;
+        do {
+
+            // block of code
+            document.write("Hello World");
+            // inc/dec
+            a++;
+
+        } while (a >= 10);//
+
+        // *******************************************************************************
+
+        // // odd no from 1-50
+        // let x = 1;
+        // do {
+        //     document.write(` ${x} `);
+        //     x++;
+        // } while (x <= 50);
+
+        // ***************************************************************8
+
+        // let x = 1;
+        // do {
+
+        //     if (x % 2 !== 0) {
+        //         document.write(` ${x} `);
+        //     }
+        //     x++;
+        // } while (x <= 50);
+
+        // ******************************************************************8
+
+        let sum = 0;
+        let x = 1;
+        do {
+
+            if (x % 2 !== 0) {
+                document.write(` ${x} `);
+                sum += x;
+            }
+            x++;
+        } while (x <= 50);
+
+
+        document.write(`<h3>${sum}</h3>`)
+
+        // ***********************************************************************
+
+        // nested do while
+
+
+        // let y = 2;
+        // do {
+        //     document.write(`<br>${y} <br> `);//2
+
+        //     // *****************
+        //     // nested do while
+        //     let z = 1;
+        //     do {
+        //         document.write(z + " ");//1 2 3 4...10
+        //         z++;
+        //     } while (z <= 10);
+
+        //     // *******************
+
+        //     y++;
+
+        // } while (y <= 15);
+
+
+        // ***********************************************************
+
+        let y = 2;
+        do {
+            document.write(`<br>${y} <br> `);//2
+
+            // *****************
+            // nested do while
+            let z = 1;
+            do {
+                document.write(z * y+" ");//1 2 3 4...10
+                z++;
+            } while (z <= 10);
+
+            // *******************
+
+            y++;
+
+        } while (y <= 15);
+
+    </script>
+
+
+</body>
+
+</html>
