@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- for loop-most efficient way to write looping statements in  single line-->
+    <!-- easy and simple way -->
+
+    <script>
+
+        // for(init,condition,inc/dec)
+        // {}
+
+        for (let i = 0; i <= 10; i++) {
+            document.write("Hello For Loop " + i + " <br>");// 0 1 2 3
+        }
+        // ********************************************************
+
+
+        for (let i = 0; i <= 100; i++) {
+            document.write(i + " \t ");
+        }
+
+        document.write("<br></hr>")
+        document.write("<br></hr>")
+        // ***************************************************************
+
+        // odd no 
+
+        for (let i = 1; i <= 100; i += 2) {
+
+            // if (i % 2 !== 0) {
+            //     document.write(i + "  ");
+            // }
+
+            document.write(i + " ");//1 3 5 7 9
+
+        }
+
+        // ******************************************************************
+
+        // document.write("<hr>");
+
+        // // reverse no from 50 to 1
+        // for(let i=50;i>=0;i--)
+        // {
+        //     document.write(i+"  ");//
+        // }
+        // *******************************************************
+
+        // 
+        for (let i = 0; i <= 15; i++) {
+            document.write("<br>" + i + " <br>")//0  1 2
+
+            for (let j = 1; j <= 10; j++) {
+                document.write(j + "  "); //1-10
+            }
+        }
+
+        // ***********************************************************
+
+        for (let i = 1; i <= 10; i++) {
+            document.write(`<h2>${i}</h2>`);//1 2 3
+
+            let sum = 0;//
+
+            for (let j = 1; j <= 10; j++) {
+                document.write(j * i + " ");//1 
+
+                sum += j * i;
+            }
+
+            document.write("Sum : " + sum);//
+        }
+
+        document.write("<br>");
+
+        // ***************************************************************
+
+        // star pattern
+
+        // *
+        // **
+        // ***
+        // *****
+        // *******
+
+        for (let i = 0; i <= 5; i++) { //i =0 - 1 2 3
+
+            for (let j = 1; j <= i; j++) { //j=1 2 3 4
+                document.write("*");
+                //*
+                //* *
+                //* * *
+                //* * * *
+                //* * * * *
+            }
+
+            document.write("<br>");
+        }
+
+        // *****************************************************
+
+        // way of writing for loop
+
+        // without initilization inside loop
+
+        // let i = 0;
+        // for (; i <= 10; i++) {
+        //     document.write(i + " ");
+
+        // }
+
+
+        // without condition and init
+        let j = 0;
+        for (;;) {
+            while (j <= 5) {
+                document.write(j + " ");//0 1 2 3 4 5
+                j++;
+            }
+            break;
+        }
+
+        // **********************************
+        let x = 1;
+        for (; ;) {
+            if (x <= 5) {
+                alert(x);//1
+                x++;
+            }
+            break;
+        }
+
+    </script>
+
+</body>
+
+</html>
