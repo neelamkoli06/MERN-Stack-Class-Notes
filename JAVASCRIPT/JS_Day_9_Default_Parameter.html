@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        function Sum(x, y, z) {
+            console.log(x + y + z);
+        }
+        Sum(100, 200, 50);
+
+        // passed 2 values only
+
+        //NaN
+        Sum(100, 200);// NaN
+
+
+        // **************************************************
+        // default parameter- set default parameter while function declartion i.e set by default values
+
+        // Used when does not pass sufficient arguments while function calling
+
+
+        function Sum2(x = 0, y = 0, z = 0) {
+            return x + y + z;
+
+        }
+
+        console.log(Sum2(100, 200, 400));
+
+        console.log(Sum2(100, 200));//100 +200 +0//300
+        console.log(Sum2(100));//100+0+0
+        console.log(Sum2());//0
+
+        // ***********************************************************************
+
+        // console.log(Sum2(50,100,200,20,30,40));
+
+        // Solution- Rest Parameters, Arguments
+
+
+        // ****************************************************************
+
+        function Demo3(name = "john", skill = "HTML") {
+            console.log(name)
+            return "Hello World";
+
+            // doesnt execute
+            console.log(skill);
+            console.log(skill);
+        }
+
+        console.log(Demo3("Pratik", "ReactJS"));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- functions
+    
+    block of code
+    bunch of JS Statements
+
+    Write once/ Defined Once and Reused multiple times by calling that function
+
+    We can called same function multiple times by passing different arguments
+
+
+
+    Mostly JS functions are called on events
+
+    syntax
+
+    //function declartion/defination
+    function fun_name()
+    {
+        block of code
+    }
+        //function calling
+        fun_name()
+    -->
+
+    <h1 id="data"></h1>
+
+    <button onclick="Handler1()">Click Here </button>
+
+    <button onclick="Handler2()">Apply Color</button>
+
+    <script>
+
+        // alert('Hello Welcome To The function');
+
+
+        // function declartion/defination
+        function Demo() {
+            //block of code
+            alert('Hello Welcome To The function')
+        }
+        //function calling
+        // Demo()
+
+
+        // *****************************************************************
+
+        function Handler1() {
+            document.getElementById('data').innerHTML = "Welcome To JS Functions";
+        }
+
+        // Handler1()
+
+        // **************************************************************
+
+        function Handler2() {
+            document.getElementById('data').style.color = "orange";
+        }
+
+        // ********************************************************************
+
+
+        // Addition
+        let a=+prompt('enter a No1')
+        let b=+prompt('enter a No2')
+
+        function Addition() {
+            console.log(a+b);
+        }
+        Addition()
+
+        // *****************************************************************************
+
+        // Function With Parameter
+
+        // parameter and Arguments
+
+        
+
+    </script>
+
+</body>
+
+</html>

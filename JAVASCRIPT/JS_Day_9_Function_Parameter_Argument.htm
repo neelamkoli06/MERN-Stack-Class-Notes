@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Parameter- Such a values/variables which we pass during  function declaration -->
+
+    <!-- Arguments - such a values which we pass during function calling-->
+
+    <!-- we can pass value dynamically  -->
+
+
+    <h1 id="userrecord"></h1>
+    <script>
+
+
+        // function Mult() {
+        //     alert(10 * 10);
+        // }
+        // Mult()
+
+
+
+        function Addition(a, b) {
+            alert(a + b);
+        }
+
+        // arguments- actual values
+        Addition(100, 50)
+
+        Addition(50, 50);
+
+
+        // ******************************************************
+
+        function User(name, skill) {
+            document.getElementById('userrecord').innerHTML = "Your Name Is " + name + " Your Skill Is  " + skill;
+
+        }
+
+        User("Pratik","ReactJS");
+        User("Abhijeet","ReactJS");
+    </script>
+</body>
+
+</html>
