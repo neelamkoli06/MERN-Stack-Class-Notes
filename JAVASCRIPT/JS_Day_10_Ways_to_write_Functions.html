@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- ways to write fucntions -->
+
+
+    <!-- Normal Function -->
+    <!-- Variable expression Function -->
+    <!-- Anonymous Function -->
+    <!-- Arrow Function / Fat Arrow Function/ Lamda Function -->
+
+
+
+    <!-- Callback Function-->
+    <!-- Self Invoking Function-->
+
+    <script>
+
+
+        // Normal function
+        function Demo3() {
+            alert("Normal Function");
+        }
+        Demo3();
+
+
+        // *******************************************************
+
+        // function treated like any other variable i.e function stored in a variable
+
+        // variable expression
+
+        const Demo = function Demo1() {
+            alert("Hello Variable Expression Function");
+
+        }
+        //called variable as a function i.e VE
+        Demo();//
+
+        // **********************************************************************
+
+        // Anonymous Function -
+
+        //no name to the function
+
+        const Demo2 = function () {
+            alert('Anonymous function called')
+        }
+
+        Demo2();
+        // ******************************************************************************8
+
+        // ES-6 Modern JS
+
+        // Fat Arrow Function / lamda function
+
+        // Modern way to write simpler and efficient function
+        //most readale
+        //easily writable
+        //No need to bind this keyword i.e by default access
+
+        // const Demo5 = () => {
+        //     alert("Hello Arrow Function");
+        // }
+
+        // Demo5()
+
+        // const Sum = (a = 0, b = 0) => {
+        //     alert(a + b);
+        // }
+
+        // Sum(1000, 200);
+
+        // **********************************
+        // write a single line
+
+        const User = (a, b) => console.log(a + b);
+        User("John", "Peter");
+
+        // **************************************
+        // when we return something must be in a { }
+        const Product = () => { return "Hello Products" };
+
+        console.log(Product());
+
+        //   ***************************************************************************************
+
+        // Interview question
+
+        function Sum(a, b) {
+            // write nested function and perform addition op
+            function Addition(x, y) {
+                console.log(x + y);
+            }
+            Addition(a, b)
+
+        }
+        Sum(1000, 1000);
+
+
+        // *******************************************************
+
+        // function sum(a, b) {
+        //     function addition() {
+        //         console.log(a + b)
+        //     }
+        //     addition()
+        // }
+
+        // sum(1000, 2000)
+
+
+
+
+
+        // ***********************************************************************************
+
+        // Normal function are hoisted
+        // Called first declared later i.e after used
+
+        A();
+
+        function A() {
+            console.log("Hello Normal Function Hoisted");
+        }
+
+
+
+
+        // Other functions are not Hoisted
+
+        // i.e we can used function until it has been declared
+
+        // X();
+
+        var X = () => {
+            console.log("Others Functions Are Not Hoisted");
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

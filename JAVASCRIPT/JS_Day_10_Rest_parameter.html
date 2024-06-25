@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Arguments - return whole array elements and doesnt return pure Array -->
+
+    <!-- Rest Parameters-
+    
+    Modern ES_6 Features
+
+    Used to handle only Rest Values and return only rest values
+    Return pure Array
+
+    Indicate by ...
+
+    rest parameter always be list in a parameter list
+    -->
+
+    <script>
+
+        function Sum(x = 0, y = 0, z = 0, ...result) {
+            console.log(x + y + z);
+            // console.log(arguments);
+
+            console.log(result);
+
+
+            var sum = x + y + z;
+
+            // *************************************************
+
+            // for (let i = 0; i < result.length; i++) {
+            //     console.log(result[i]);
+            //     sum += result[i];
+            // }
+
+
+            // console.log("Sum : " + sum);
+            // *************************************************
+
+            // Looping Statement
+
+            // modern JS
+
+            // for of-
+            // Used to iterate Array object
+            // It must be iterable and return only values
+
+            for (let x of result) {
+                console.log(x);
+                sum += x;
+
+            }
+            console.log("Sum : " + sum);
+
+
+            // *************************************************
+
+        }
+        Sum(10, 20, 30, 100, 200, 300, 400);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Arguments
+    
+    Used to handle arguments values
+
+    return a arguments lists collection
+
+    Return a whole data
+    doesnt return an pure array
+
+    -->
+
+    <button onclick="Addition(100,200,300)">Addition</button>
+
+    <script>
+
+
+        function Addition(a = 0, b = 0, c = 0) {
+            console.log(a + b + c);
+
+            // *************************************************
+            // arguments
+            console.log(arguments);
+            console.log(arguments.length);
+
+            var sum = 0;
+
+            for (let i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+                sum += arguments[i];
+            }
+
+            console.log("Total Sum Is " + sum);
+            // **************************************************
+
+        }
+        // Addition(20, 30, 40);
+        // Addition(20, 30);
+
+        // Addition();//0
+
+        // when we are passing extra arguments
+        Addition(20, 30, 40, 100, 200, 300, 1000, 2000);//90 - JS by default ignores extra arguments or values
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
