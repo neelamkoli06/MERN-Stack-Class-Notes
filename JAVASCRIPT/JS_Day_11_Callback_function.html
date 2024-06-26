@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // function A() {
+        //     console.log("Hello Function A");
+        // }
+        // A();
+
+        // function B() {
+        //     console.log("Hello Function B");
+        // }
+        // B();
+
+
+        // ********
+        // function A() {
+        //     B();
+        //     console.log("Hello Function A");
+        // }
+        // A();
+
+
+        // function B() {
+        //     console.log("Hello Function B");
+        // }
+
+
+
+        // ******************************************************************8
+
+        // <!-- Callback function -->
+
+        //  i will call back
+
+        //one function execute into another function
+
+        //passing a one function to another function  as argument
+
+        //one function executes after another function finish their execution
+
+
+        function A() {
+            console.log("Hello Function A");
+        }
+
+        // A()
+
+        //1 -passing a parameter for above function
+        function B(callback) {
+
+            //called that function 
+            callback();
+
+            console.log("Hello Function B");
+        }
+
+        //3- passing a 'A' function to the ' B' function as a argument
+        B(A);
+
+        //output- 
+
+        // *************************************************************************************
+
+        function X() {
+            console.log("Hello Good Afternoon");
+        }
+
+        function Y(callback, name) {
+            callback();
+            console.log(name);
+
+        }
+        Y(X, "Shubham");
+
+        // *****************************************************
+
+
+
+
+        function Team(callback) {
+            callback("MERN Stack Developer", "Prathmesh")
+        }
+
+        // Team(Emp);
+
+
+        // Another way to write code
+        Team(function Emp(role, name) {
+            console.log(`Hello Your name Is ${name} And Your Role Is ${role}`);
+        })
+
+        // ***********************************************************
+
+
+
+        function Products(p_id, p_name) {
+            return "Products ID : " + p_id + " Product name Is :" + p_name;
+        }
+
+        function Cart(callback, cart_name) {
+            // console.log(callback(1234, "Laptop") + " " + cart_name);
+            return callback(1234, "Laptop") + cart_name;
+        }
+        console.log(Cart(Products,"Ecommcerce Cart"));
+
+        // Cart(Products, "Ecommcerce Cart")
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
