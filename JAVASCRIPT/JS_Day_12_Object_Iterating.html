@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const obj = {
+
+            emp_id: "#3223",
+            empName: 'Rushi',
+            empRole: ["Front end", "Backend", "CLoud Engineer"],
+            empCTC: "30LPA",
+            empMobile: "9984546343",
+
+            // avoid same key key reused
+            empEmail: 'john@gmail.com',
+            empEmail: 'abc@gmail.com',
+
+            empSkill: {
+                skill1: "ReactJS",
+                skill2: 'Nodejs',
+                skill3: 'AWS',
+            }
+        }
+
+        console.log(obj);
+
+        // empName
+
+        console.log(obj.empName)
+        console.log(obj['empName'])
+
+        // we can update value
+        obj.empName = "Kartik";
+        // console.log(obj);
+
+        // ****************************************************r
+
+        // Always used unique key if used same key repeat it will consider last one
+
+        console.log(obj);
+
+        // ******************************************************************8
+
+        // Object Iterating
+
+        // for in-  Used to iterate array object
+        // return key value data
+
+        for (let keys in obj) {
+            // console.log(keys);
+            // console.log(obj[keys]);
+
+            console.log(`${keys} : ${obj[keys]}`);
+        }
+
+
+        // nested object iterate
+
+        for(let keys in obj.empSkill)
+        {
+            console.log(keys+" = "+obj.empSkill[keys]);
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

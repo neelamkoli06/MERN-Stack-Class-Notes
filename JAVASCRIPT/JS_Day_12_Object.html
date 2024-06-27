@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Object
+        
+    is a entity having methods and properties
+
+    Collection of key value data
+
+    key:value
+
+    we can stored large amount of data in key value pair
+
+    
+    Is a King of JS i.e     Everyhting in a JS is a Object
+    
+    JS is object based SL
+
+
+    Object -Data accessed through Named indexing
+    i.e obj.key
+    
+    -->
+
+    <script>
+
+        // 3 ways to create object
+
+        // literal way
+
+        // const obj={
+        //     key:value,
+        //     key:value,
+        // }
+        const obj = {
+            id: 1,
+            name: 'Kartik',
+            skill: 'ReactJS',
+            email: 'kartik@gmail.com',
+            isEligible: true,
+            Tech: ["HTML", "CSS", "JS", "React", "MUI", "Version Control"],
+
+        }
+
+        console.log(obj);
+
+        // ******************************************************************
+        // Provides functionality common to all JavaScript objects.
+
+        // Creating instance of An Object using new keyword
+        const obj2 = new Object();
+        obj2.id = 2;
+        obj2.name = "Kartik";
+        obj2.skill = "AWS";
+
+        console.log(obj2);
+
+
+        // ******************************************************************
+        // ******************************************************************
+
+
+
+        // this keyword
+
+        // reference variable
+        // fetch data from current object
+
+        // In JS is a treat like a Global Object
+        console.log(this);
+
+        console.log(window);
+
+        // ******************************************************************
+
+
+
+        // constructor way
+
+        // is a special type of function or method which 
+        // is used to set instance of a class or used to set or initialize object values
+
+        //Automatically invoked
+
+        function User(id, name, skill) {
+
+            // assign values using this
+            this.id = id;
+            this.name = name;
+            this.skill = skill;
+        }
+        const result = new User(123, "Akhilesh", "Nodejs");
+
+        console.log(result);
+
+        // ******************************************************************************************
+
+        // Fetching data from a object
+
+        const UserData = {
+            user_id: 1,
+            user_name: 'Shubham',
+            user_pan: "ABCD1234E",
+            user_mobile: '987643210',
+            user_Register: true,
+            user_role: ["Admin", "Editor"],
+
+            user_address: {
+                permanant_add: 'Pune',
+                residential_add: 'Mumbai',
+            }
+        }
+
+        console.log(UserData);
+
+        // username
+        console.log(UserData.user_name);
+
+        // user role
+        console.log(UserData.user_role)
+
+        // or
+
+        console.log(UserData['user_role']);
+
+        //user address
+        console.log(UserData.user_address);
+
+
+        //permanent address
+
+        console.log(UserData.user_address.permanant_add)
+
+        // Admin 
+        console.log(UserData.user_role[0])
+
+
+        // *****************************************************************************************
+
+        // Defined number,boolean,array,string as a object using new keyword
+
+        const no = 123;
+        console.log(no)
+        console.log(typeof no);//number
+
+        const no2 = new Number(456);
+        console.log(no2);
+        console.log(typeof no2);//object
+
+
+        let isEligible = true;
+        console.log(isEligible);//true
+        console.log(typeof isEligible);//boolean
+
+        let isEligibl2 = new Boolean(false);
+        console.log(typeof isEligibl2);//object
+
+        let str = "Pratik";
+        console.log(str);
+        console.log(typeof str);//string
+
+
+        //string as a object
+
+        let str2 = new String("Amol");
+        console.log(str2)
+        console.log(typeof str2);//object
+
+
+        // Array
+        const arr = [10, 20, 30];
+        console.log(arr);//
+        console.log(typeof arr);//
+
+
+        let arr2=new Array(["HTML","CSS","MUI","AWS"])
+        console.log(arr2);
+        console.log(typeof arr2);
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
