@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // method-  when we passing a function as a key or property value
+
+
+        const Products = {
+            p_id: 123,
+            p_name: 'Apple Iphone',
+            p_RAM: '16GB',
+            p_ROM: '1TB',
+            p_Brand: 'Apple',
+            p_processor: 'Apple A16 Bionic',
+
+            // method
+            p_summary: function () {
+
+                console.log(`Product Name : ${this.p_name} And Product Id :${this.p_id}`);
+            }
+        }
+
+        console.log(Products);
+
+        console.log(Products.p_summary);
+        // called
+        // console.log(Products.p_summary());
+
+        Products.p_summary();
+
+
+
+
+    </script>
+
+</body>
+
+</html>

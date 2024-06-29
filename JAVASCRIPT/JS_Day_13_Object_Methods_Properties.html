@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Object Methods And Properties
+    
+    To Perform Multiple Opeartions on a give Object
+
+
+    Object.keys()
+    Object.getOwnPropertyNames()
+    Object.values()
+    Object.entries()
+    -->
+
+    <script>
+
+        const Products = {
+            p_id: 123,
+            p_name: 'Apple Iphone',
+            p_RAM: '16GB',
+            p_ROM: '1TB',
+            p_Brand: 'Apple',
+            p_processor: 'Apple A16 Bionic',
+
+        }
+
+        console.log(Products);
+
+        //Object -  Provides functionality common to all JavaScript objects.
+
+
+        // Object.keys()- return a keys of a given object in an Array format
+        var result1 = Object.keys(Products);
+        console.log(result1);
+
+        // ************************************************
+
+        // Returns the names of the own properties of an object.
+        //  The own properties of an object are those that are defined directly
+        // Object.getOwnPropertyNames();
+
+        console.log(Object.getOwnPropertyNames(Products));
+
+
+        // *****************************************************
+
+        // Object.values()-return a values of a given object in an Array format
+
+        console.log(Object.values(Products));
+
+        // ********************************************************
+
+        // Object.entries()-return a key value from a given object in an Array format
+
+        console.log(Object.entries(Products));
+
+        // for (let keys in Products) {
+        //     console.log(keys + " :  " + Products[keys])
+        // }
+
+
+        // *********************
+        // for of- must be iterable
+
+        // for (let x of Products) {
+        //     console.log(x);// Products is not iterable
+        // }
+
+        for (let x of Object.entries(Products)) {
+            console.log(x);
+        }
+
+
+        // ***************************************************************************************
+
+        // is()- return true when 2 values are similar
+        console.log(Object.is("10", "30"));
+        console.log(Object.is("10", "10"));//true
+
+        // check data type
+        console.log(Object.is("10", 10));//false
+
+        console.log(Object.is(NaN, NaN));//true
+        console.log(Object.is("Null", "Null"));//false
+
+
+        console.log(isNaN(20));//false
+        console.log(isNaN("ABC"));//true
+
+        // isNaN()
+        // isFinite()
+
+        // **************************************************************************************
+
+        // Object.freeze()
+
+        // 
+
+        const obj2 = {
+            p_id: 123,
+            p_name: 'Apple Iphone',
+            p_RAM: '16GB',
+            p_ROM: '1TB',
+            p_Brand: 'Apple',
+        }
+
+        //It prevents the Modification of a Object i.e we can not Add, Update new Properties and also cant update existing 
+        Object.freeze(obj2);
+
+
+        // *********************************
+        // Object.seal()-Prevent New Addition of Properties but we Can Update existing property values
+
+        Object.seal(obj2);
+
+        // *****************************************************************
+
+        // Update value
+        obj2.p_name = "Samsung Galaxy S24 Ultra",
+
+
+            // Add new Properties
+            obj2.p_price = "1,29,999 /-";
+
+        console.log(obj2);
+
+
+        // ******************************************************************************************
+
+        // Testing methods
+
+        // Object.isSealed()
+        // Object.isFrozen()
+
+        // Returns a value that indicates whether new properties can be added to an object.
+        // Object.isExtensible()
+
+
+        console.log(Object.isSealed(obj2));//true
+
+        console.log(Object.isFrozen(obj2));//false
+
+        console.log(Object.isExtensible(obj2));//false
+
+        // Additional
+
+        // Object.create()
+
+
+        // used to copy one object data to another targeted object
+        // Object.assign(target: {}, source: any))
+
+        const obj3 = {
+            name: 'John',
+            id: 123,
+        }
+
+        const obj4 = {
+            email: 'john@gmail.com',
+            phone: '9876543210',
+        }
+
+
+        console.log(Object.assign(obj4, obj3, { role: 'Front end Developer' }))
+
+        // ******************************************************************
+        // Object.getOwnPropertySymbols();
+
+        // Object.getOwnPropertyDescriptors()
+
+        console.log(Object.getOwnPropertyDescriptors(obj2));
+
+        // ***************************************************
+
+        // Array object by default return protoypes
+
+        console.log(Object.getPrototypeOf(obj2));
+
+        // Object.setPrototypeOf()
+
+        // ****************************************
+
+        // Return given object as its using Object object method
+
+        const obj5 = {
+            id: 1,
+            name: 'John'
+        }
+
+        console.log(obj5);
+
+        // Method- valueOf()-return object as it is
+        //by default method
+        console.log(obj5.valueOf());
+
+
+    </script>
+</body>
+
+</html>
