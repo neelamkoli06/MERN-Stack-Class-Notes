@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- string - collection of characters -->
+    <!-- stored in a " " or ' ' -->
+
+    <!-- starts indexing from 0 -->
+
+
+    <script>
+
+        // literal way
+        let str = "Front end Developer";
+        // alert(str);
+        console.log(str)
+
+
+        // creating instance of a string
+        let str2 = new String("MERN Stack")
+        console.log(str2);
+
+
+
+
+        // ****************************************************************************
+        // String Methods
+
+        // length
+
+        // slice()
+        // substring()
+
+        // substr()
+
+        // touppercase()
+        // tolowercase()
+
+        // split()
+
+        // replace()
+        // includes()
+
+        // trim
+
+        // pad
+
+
+        // **********************************************************************
+        let empName = " Shailesh";
+        console.log(empName);
+
+        // length property
+
+        // it includes spacing also 
+        console.log(empName.length); //9
+
+
+        // a
+        console.log(empName[3]);//a
+
+
+        // slice()
+        // extract part of a string
+        //doesnt modified original string
+        //syntax(start,end(ignored index element))
+
+
+        let str4 = "UI Development";
+
+        console.log(str4.slice(2, 6));// Dev
+
+        console.log(str4.slice(-4, -2));//me
+
+        // *************************************************************
+
+        //substring- similar to slice()
+        // -ve index not allowed
+
+        console.log(str4.substring(0, 3));//UI
+
+        // console.log(str4.substring(-6,-4))
+
+        // *********************************************************8
+
+        // substr()- used to extract part of string
+        //syntax is similar to splice()
+
+        // syntax-  substr(start,length);
+
+        console.log(str4.substr(2, 4));// Dev
+        console.log(str4.substr(4, 3));// eve
+
+        console.log(str4)
+
+        // **********************************************************************
+
+
+
+        let str6 = "John Peter";
+
+        console.log(str6);
+
+        //convert to uppercase
+
+        console.log(str6.toUpperCase())
+
+        console.log(str6.toLowerCase())
+
+        //convert to lowercase
+
+        // *****************************************************************
+
+        // includes()- check characters is present or not
+
+        console.log(str6.includes('Peter'));//true
+        console.log(str6.includes('kartik'));//false
+
+
+        // *************************************************
+        //convert array to string()
+        // toString()
+        // join()
+
+        // convert string to an Array
+
+        //split()
+
+
+        let empEmail = "john@gamil.com";
+        console.log(empEmail);
+
+        console.log(empEmail.split());
+
+        //2
+        console.log(empEmail.split());
+
+
+        // ************************************************************
+
+        // replace()- replace a old string data with new one
+
+        // replace(searchvalue, replace value)
+
+        let skill = "React HTML CSS";
+
+        console.log(skill);
+
+        console.log(skill.replace('HTML', 'Modern JS'));
+
+        //
+        console.log(skill.replace('Nodejs', 'Modern JS'))
+
+
+
+        // *****************************************************************
+        // trim()- remove white spacing of starting and ending and return new string
+
+        let Tech = " Front End Development ";
+
+        console.log(Tech)
+
+        console.log(Tech.length);//23
+
+
+        //trim
+        var result1 = Tech.trim();
+        console.log(result1);
+        console.log(result1.length);//21
+
+
+        //trimStart- remove leading(starting) white space
+        var result2 = Tech.trimStart();
+        console.log(result2)
+        console.log(result2.length);//22
+
+
+        //trimEnd- remove trailing(ending) white space
+        var result3 = Tech.trimEnd();
+        console.log(result3)
+        console.log(result3.length);
+
+        // ******************************************************************
+
+        // pad- attached a string data to given starting to reach its maximum length
+
+        // pads the current string with a given string (possibly repeated) 
+        // so that the resulting string reaches a given length
+
+        let str7 = "ABC";
+
+        console.log(str7);
+
+        console.log(str7.padStart(10, "*"));//*********ABC
+
+        console.log(str7.padEnd(6, "#"));//ABC###
+
+
+        // *********************************************************************
+
+        // Interview que
+
+
+        let empSkill = "HTML CSS JS React";
+
+        console.log(empSkill);
+
+        //convert to  Array
+        //
+        console.log(empSkill.split());
+
+        //split each string data by , separated
+        console.log(empSkill.split(''))
+
+        // split each string data by spacing
+        console.log(empSkill.split(' '));
+
+
+
+        //
+        let empRole = "Front end Developer";
+
+
+        // Expected Outcome: //Developer end Front
+        console.log(empRole.split(' ').reverse().toString());
+
+        console.log(empRole.split('').reverse().toString());
+
+
+
+        // tnorF dne repoleveD
+
+        // console.log(empRole.split(' '))
+
+        // **************************************************
+        // let arr = [10, 20, 30, 50, 60];
+
+        // console.log(arr.keys());//return array iterator
+
+        // //
+        // for(let x of arr.keys())
+        // {
+        //     console.log(x);
+        // }
+
+    </script>
+
+</body>
+
+</html>

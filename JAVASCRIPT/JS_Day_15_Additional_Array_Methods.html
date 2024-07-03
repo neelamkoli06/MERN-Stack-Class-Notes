@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- at()
+    indexOf()
+    lastIndexOf()
+    
+    slice()
+    substring()- similar to slice
+
+    isArray()
+
+    sort()
+    reverse
+
+    toString()
+    join()
+
+    fill()
+    includes()
+    from()
+    flat()
+    valueOf() -->
+
+    <!-- filter,find -->
+    <!-- some ,every -->
+    <!-- reduce -->
+
+    <!-- ************************************************************************************** -->
+
+    <script>
+
+
+        const arr = [100, 200, 300, 500, 200];
+
+        // at- return element from that specific index
+        console.log(arr.at(2));//300
+
+
+        //indexof()
+        //lastIndexOf()
+
+        //return index of a starting element 
+        // Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
+        console.log(arr.indexOf(200));//1
+
+        //lastIndexOf
+        //return a index of a last occurence
+
+        console.log(arr.lastIndexOf(200));//4
+
+        // -1 if not present
+        console.log(arr.lastIndexOf(1000));//-1
+
+        // *********************************************************
+        // includes()- check element present or not and return boolean value
+
+        console.log(arr.includes(100));//true
+
+
+        // ***************************************************************
+
+        // isArray()-check given element is Array or not
+
+        console.log(Array.isArray(arr));//
+
+        console.log(Array.isArray({}));//false
+        console.log(Array.isArray("ABC"));//false
+        console.log(Array.isArray([]));//true
+
+
+        // ********************************************************
+
+        // fill()- filled static data in whole array
+
+        //modified array
+
+        const arr2 = ["HTML", "CSS", "Bootstrap", "Modern JS"]
+        console.log(arr2);
+
+        arr2.fill("Front End Developer");
+
+        console.log(arr2);
+
+        // *************************************************************
+
+        // valueOf()- return array itself as it is
+
+        const arr3 = ["A", "B", "C"]
+        console.log(arr3);
+        console.log(arr3.valueOf());
+
+        // ************************************************************
+
+
+        // slice()
+        //extract the small piece of data or specific portion from given array
+
+        //syntax- slice(start,end(last index element ignore))
+
+        // doesnt modified original
+
+        const arr4 = [100, 200, 500, 600, 700, 900];
+
+        console.log(arr4);
+
+
+        console.log(arr4.slice(0, 3));//start-100 200 500 ignored-600
+
+        console.log(arr4.slice(3, 6));//600,700,900
+
+        console.log(arr4.slice(1));//
+
+        console.log(arr4);
+
+
+
+
+        // similar to slice method
+        //-ve index allowed
+
+
+        //substring()-work on string only
+
+        console.log(arr4.slice(2, 4));//500,600
+
+        const str = "Akhilesh"
+        // -ve index allowed
+        console.log(str.slice(2, 4));//hi
+
+        // 
+        console.log(str.substring(2, 4));//hi
+
+
+        console.log(str.slice(-4, -2));//le
+        console.log(str.substring(-4, -2));//empty array
+
+        // ***********************************************************************
+
+
+        // reverse()- reverse the given array
+
+        const arr5 = ["HTML", "CSS", "JS"];
+        console.log(arr5);
+
+        console.log(arr5.reverse());
+
+
+        //
+        for (let i = arr5.length - 1; i >= 0; i--) {
+            console.log(arr5[i]);//JS CSS HTMl
+        }
+
+
+        // *******************************************************************************8
+        // sort()- sort the given array alphabetically 
+
+
+
+        const data = ["A", "X", "Y", "C", "Z", "P", "R"];
+        console.log(data);
+        console.log(data.sort());
+
+        const data2 = [200, 50, 150, 350, 600, 650, 1000]
+
+
+        // sort number elements
+        // compare function- compare 2 values and return
+
+        console.log(data2.sort((function (a, b) { return a - b })))
+
+        // descending order
+        console.log(data2.sort((function (a, b) { return b - a })))
+
+
+        // **************************************************************
+
+        // Convert Array to String
+
+        // toString()
+        // join();
+
+        // const arr6 = [
+        //     {
+        //         id: 1,
+        //         name: 'Shailesh',
+        //         role: 'MERN Stack',
+        //         ctc: '20LPA',
+        //         emai: 'shailesh@gmail.com'
+        //     },
+
+        //     {
+        //         id: 2,
+        //         name: 'Kartik',
+        //         role: 'MERN Stack',
+        //         ctc: '20LPA',
+        //         emai: 'shailesh@gmail.com'
+        //     }
+        // ]
+
+        // console.log(arr6);
+
+
+
+        //
+        const arr6 = [1000, 3000, 4000, 5000, 6000]
+        console.log(arr6);
+
+        //convert into sting with comma separated value
+        console.log(arr6.toString());
+
+
+        console.log(arr6);
+
+
+        //join()-convert array to string by separator
+
+        console.log(arr6.join());//
+        console.log(arr6.join("*"));//
+        console.log(arr6.join(" # "));//
+
+        // ************************************************************************
+
+        // flat - convert nested array into single array 
+
+        const arr7 = [10, 20, 30, [50, 800, 900], ["HTML", "CSS", "JS"]];
+        console.log(arr7);
+
+
+        console.log(arr7.flat())
+
+
+
+
+        // from - Creates an array from an iterable object
+
+        const str3="Pratik";
+        console.log(Array.from(str3));
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
