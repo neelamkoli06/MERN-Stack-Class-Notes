@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <hr>
+
+    <label for="">Enter Your Email</label>
+    <input type="email" name="" id="useremail" onkeyup="GetData()">
+
+    <br><br>
+    <hr>
+
+    <label for="">Enter Your Password</label>
+    <input type="password" name="" id="userpass">
+    <br><br>
+
+    <hr>
+
+
+    <h1 id="email">Your Email Here</h1>
+    <h1 id="pass">Your Password Here</h1>
+
+
+
+    <script>
+
+        const GetData = () => {
+
+            // to fetch input field data
+            //value
+
+            var result = document.getElementById('useremail').value;
+
+            console.log(result);
+
+            document.getElementById('email').innerHTML = result;
+
+
+            var str="ABC";
+            // console.log(str.to)
+
+
+        }
+    </script>
+
+</body>
+
+</html>

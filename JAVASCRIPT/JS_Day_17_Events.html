@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .section {
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            margin: 50px auto;
+        }
+
+
+        .section2 {
+            height: 400px;
+            width: 400px;
+            background-color: black;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Events In JS -->
+
+
+    <!-- JS is a events based SL -->
+
+    <!-- do something on user action -->
+    <!-- used to make our application dynamic -->
+
+
+    <!-- 4 Types of Events -->
+
+    <!-- 1- Mouse Events-
+
+     onclick,ondblclick,oncontextmenu,onmouseover,onmouseleave
+      onmousenter,onmouseout,onmouseup,onmousedown,onmousemove,onmousewheel
+
+     2- Keyboard events- onkeypress,onkeyup,onkeydown
+
+     3- Form Events- onfocus,onblur,onchange,onselect,onsubmit
+
+     4- Window events onload, onresize,onscroll-->
+
+
+
+    <!-- on -prefix -->
+
+
+    <!-- onclick - when we click -->
+    <button onclick="ChangeColor()">Click Here to change Color</button>
+
+
+    <!-- ondlbclick- when click twice -->
+    <button ondblclick="alert('Hello ondblclick event')">dbl click here</button>
+
+
+
+    <!-- oncontextmenu - when we right click on mouse button i.e called before contextmenu display -->
+    <button oncontextmenu="alert('oncontextmenu event called')">oncontextmenu event</button>
+
+    <!-- ************************************************************************************** -->
+
+    <!-- onmouseover- when we hover mouse/cursor on that specific element -->
+    <!-- onmouseleave-when we leave mouse from that specific element -->
+
+    <div class="section" id="box" onmouseover="Demo1()" onmouseleave="Demo2()"></div>
+
+    <!-- onmousenter- when mouse entering on that specific element -->
+    <!-- onmouseout-when mouse out from that specific element -->
+    <div class="section2" id="box2" onmouseenter="Demo3()" onmouseout="Demo4()" onmousedown="Demo5()"
+        onmouseup="Demo6()"  onmousewheel="alert('Hello onmousewheel event')"></div>
+
+        <!-- onmousemove="alert()" -->
+
+
+    <script>
+
+        const ChangeColor = () => {
+
+            document.getElementById('box').style.background = "orange";
+        }
+
+
+        // onmouseover
+        function Demo1() {
+            document.getElementById('box').style.backgroundColor = "maroon";
+        }
+
+
+        // onmouseleave()
+        // <!-- onmouseleave-when we leave mouse from that specific element -->
+        function Demo2() {
+            document.getElementById('box').style.background = "purple";
+        }
+
+        //    <!-- onmousenter- when we entering on that specific element -->
+
+        const Demo3 = function () {
+
+            document.getElementById('box2').style.borderRadius = "50%";
+
+        }
+
+        // <!-- onmouseout-when mouse out from that specific element -->
+
+        const Demo4 = function Demo() {
+            document.getElementById('box2').style.borderRadius = "20%";
+        }
+
+
+
+        //onmousedown- when we pressed mouse button
+        const Demo5 = () => {
+            document.getElementById('box2').style.border = "solid red 5px";
+        }
+
+
+        //onmouseup
+        const Demo6 = () => {
+
+            document.getElementById('box2').style.background = "pink"
+        }
+
+
+        // onmousemove-when we mouse movement take place
+
+
+        //onmousewheel- when we move wheel button
+
+    </script>
+
+</body>
+
+</html>
