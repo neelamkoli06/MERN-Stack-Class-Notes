@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="alert('hello onload event called')" onresize="GetSize()" onscroll="console.log('onscroll event called')"
+    style="height: 1000px;">
+
+    <!-- Window Events- when we work on browser window
+     
+    
+onload- when we load our window
+onresize- when we resize our window screen
+
+onscoll- when we scroll our window
+    -->
+
+
+    <script>
+        function GetSize() {
+            // return inner width of a window screen excluding dev tool
+            console.log('Inner Width:' + window.innerWidth);
+
+            // outerwidth- return a total width of a window screen
+            console.log('Outer Width Is ' + window.outerWidth);
+
+            //innerHeight-return inner height of a window screen
+            console.log('Inner Height Is: ' + window.innerHeight);
+
+            // outerheight-return total outer height of a window screen
+            console.log('Outer Height Is: ' + window.outerHeight);
+        }
+    </script>
+</body>
+
+</html>

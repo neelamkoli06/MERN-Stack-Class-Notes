@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Form event -->
+
+    <!-- when we work on form -->
+
+    <!--
+     onfocus 
+     onblur
+     onchange
+     onselect
+     onsubmit
+     
+    -->
+
+
+    <!-- onfocus- when we focused on a input field -->
+
+    <input type="text" name="" id="inp1" onfocus="Demo1()" onblur="Demo2()">
+
+    <!-- onblur- when we lost our focus -->
+
+    <!-- *************************************************************** -->
+    <br>
+    <hr>
+    <input type="text" name="" id="no1" onfocus="Demo3('no2')">
+    <input type="text" name="" id="no2" onfocus="Demo3('no1')">
+
+    <!-- ********************************************************************************** -->
+
+    <!-- onselect- when we select text content -->
+    <input type="text" name="" id="username" value="Shailesh" onselect="Demo5()">
+    <!-- <input type="text" name="" id="username2" value="Kartik" onselect="alert(username2.value)"> -->
+
+    <!-- ************************************************************************** -->
+
+    <!-- onchange- when we change data i.e options -->
+
+    <label for="">Choose Your Address</label>
+
+    <!-- <select name="" id="address" onchange="GetAddress()"> -->
+    <select name="" id="address" onchange="alert(`Your Address Is ${address.value}`)">
+        <option value="">Choose Your Address</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Nashik">Nashik</option>
+        <option value="Ahmednagar">Ahmednagar</option>
+    </select>
+
+
+    <!-- ******************************************************************************** -->
+
+    <!-- sumbit our form -->
+
+    <form action="" method="" onsubmit="SaveForm()">
+
+        <label for="">ENter Your Email:</label>
+        <input type="email" name="email" id="">
+        <br><br>
+
+        <label for="">Enter Your Password:</label>
+        <input type="password" name="pass" id="">
+        <br><br>
+
+
+        <button type="submit" onclick="return confirm('Are you sure ?')">Save Form</button>
+        <!-- <input type="submit" name="" id=""> -->
+
+    </form>
+    <script>
+
+        const Demo1 = () => {
+
+            document.getElementById('inp1').style.backgroundColor = "pink";
+        }
+
+        // onblur
+        const Demo2 = () => {
+            document.getElementById('inp1').style.backgroundColor = "orange"
+        }
+
+        // ************************************************************
+
+        const Demo3 = (data) => {
+
+            document.getElementById(data).style.backgroundColor = "purple";
+        }
+
+        // ***************************************************************************
+
+        // onselect- when we select text content
+
+        const Demo5 = function () {
+            var result = document.getElementById('username').value;
+            alert(result);
+
+        }
+
+        // ************************************************
+        // onchange()
+
+        const GetAddress = () => {
+            alert(document.getElementById('address').value)
+        }
+
+        const SaveForm = () => {
+            alert("Congrats Dear!!");
+
+            // fetch data
+        }
+
+        // ********************************************************
+
+    </script>
+
+</body>
+
+</html>
