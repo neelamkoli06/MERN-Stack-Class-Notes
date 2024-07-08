@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- DOM-
+    
+    Document Object Model
+
+    is a Hirarchy of a html content or element i.e Tree based Structure
+
+    When web page loaded on browser it create dom object
+
+    Used to access or change html elements dynamically
+
+    Js gets all the power to make our html dyamically
+
+    Methods and Properties
+
+    i.e The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+    ******************************************************************
+
+    With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+
+
+What is the DOM?
+The DOM is a W3C (World Wide Web Consortium) standard.
+
+The DOM defines a standard for accessing documents:
+
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+The W3C DOM standard is separated into 3 different parts:
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+
+
+    -->
+    <!-- <div id="box" class="box"></div> -->
+
+    <button onclick="Demo()">Click Here</button>
+
+
+    <h1 id="data">Welcome To The HTML DOM Tree</h1>
+
+
+    <p class="para">Hello HTML DOM Object 1</p>
+    <p class="para">Hello HTML DOM Object 2</p>
+    <p class="para">Hello HTML DOM Object 3</p>
+    <p class="para">Hello HTML DOM Object 4</p>
+
+
+    <br>
+    <hr>
+
+    <label for=""> Your Name</label>
+    <input type="text" value="Pratik" name="username" id="username" class="username">
+
+    <script>
+        const doc = document
+        console.log(doc)
+
+        // console.log(doc.body)
+        // console.log(doc.head)
+
+
+        // *************************************************
+
+        // DOM Methods And Properties
+
+
+        // DOM Methods-to fetch html elements to perform multiple operations
+
+        // document.getElementById();
+        // document.getElementsByClassName();
+        // document.getElementsByTagName();
+        // document.getElementsByName();
+
+        // Addtional Methods
+
+        // document.querySelector()
+        // document.querySelectorAll()
+
+
+        // *************************************************
+
+        // getElementById - must unique
+
+        const Demo = () => {
+            // document.getElementById('box').style.backgroundColor = "pink";
+
+            // modern way
+            // box.style.backgroundColor = "pink";
+
+        }
+
+        // **************************************************************
+
+
+        //Get data
+        // by Id
+        var result = document.getElementById('data').innerHTML;
+        console.log(result);
+
+        //set data
+        document.getElementById('data').innerHTML = "Hello HTML DOM Tree";
+
+
+        // ***********************************************************************************
+
+        // by class Name
+        // getElementsByClassName
+
+        // /Returns a HTMLCollection of the elements like array 
+
+        // fetch using number indexing
+
+
+
+
+        var result1 = document.getElementsByClassName('para');
+        console.log(result1);
+
+
+        // get data
+
+        var result2 = document.getElementsByClassName('para').innerHTML;//undefined
+        console.log(result2);
+
+
+        // fetch using number indexing
+
+        var result3 = document.getElementsByClassName('para')[0].innerHTML;
+        console.log(result3)
+
+        // ****************************************************************************
+
+        //set data
+        document.getElementsByClassName('para')[2].innerHTML = "Hello Updated DOM";
+
+        // *****************************************************************************
+
+        var result5 = document.getElementsByClassName('para');
+        console.log(result5)
+        console.log(result5.length)
+
+        // for looping
+
+        for (let i = 0; i <= result5.length - 1; i++) {
+            // get data
+            console.log(result5[i].innerHTML);//
+
+            // set data
+            // result5[i].innerHTML="Hello DOM Tree";
+
+        }
+
+
+
+        // **********************************************************************
+
+        // by tag name
+
+        // get data
+        // indexing to access data
+
+        var result6 = document.getElementsByTagName('p');
+        console.log(result6);
+
+        //1 index data
+
+        var result7 = document.getElementsByTagName('p')[2];
+        console.log(result7.innerHTML);
+
+
+        //set data
+        document.getElementsByTagName('p')[3].innerHTML = "Hello By Class Name ";
+
+
+        //for looping
+
+        // **************************************************************************
+
+        // by Name- input tag
+
+
+
+        //get data
+        console.log(document.getElementsByName('username')[0].value);
+
+
+        //  set data
+        document.getElementsByName('username')[0].value = "Pranav";
+
+
+
+        // ********************************************************************************************
+
+        // document.querySelector()
+        // document.querySelectorAll()
+
+
+
+        // it return only single 1st matching html element
+
+        // document.querySelector('.classname/#id/tag')
+
+        // var result8 = document.querySelector('#data').innerHTML
+        // var result8 = document.querySelector('.para').innerHTML;
+        var result8 = document.querySelector('input').value;
+        console.log(result8);
+
+
+        // **********************************************************
+
+        // return all html elements which matched with specific selectors
+        //must be indexing
+
+        // var result9 = document.querySelectorAll('#data')[0].innerHTML;
+        var result9 = document.querySelectorAll('.para')[0].innerHTML;
+        console.log(result9);
+
+
+    </script>
+</body>
+
+</html>
