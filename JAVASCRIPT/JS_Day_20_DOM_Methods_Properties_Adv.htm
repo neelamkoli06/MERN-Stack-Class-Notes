@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .box1 {
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            margin: 50px auto;
+        }
+
+        .newclass {
+            height: 400px;
+            width: 400px;
+            background-color: purple;
+            border-radius: 20px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HTML DOM Methods And Properties -->
+
+    <!-- style property -->
+    <!-- value property- to fetch value from input field -->
+
+
+    <!-- innerHTML -return html content including inside element and spacing also-->
+
+
+    <p id="data">Lorem ipsum dolor sit amet consectetur adipisicing elit.<b>Lorem ipsum dol elit. Corporis,
+            reprehenderit.</b> unt aperi </p>
+
+    <hr>
+
+    <button onclick="Addclass()">Add Class</button>
+    <button onclick="RemoveClass()">Remove Class</button>
+    <button onclick="Toggleclass()">Toggle Class</button>
+
+    <div class="box1 box2 box3" id="box"></div>
+
+
+    <br>
+
+    <h1 id="heading1" class="heading1 heading2">get Attribute / set Attribute</h1>
+
+
+    <script>
+
+        // innerHTML- return html content including inside element and spacing also-->
+
+        var result1 = document.getElementById('data').innerHTML;
+        console.log(result1);
+
+        // innerText-return only the inner text content i.e excluding inside element and spacing
+        var result2 = document.getElementById('data').innerText;
+        console.log(result2)
+
+        //outer text-return only text content
+        var result3 = document.getElementById('data').outerText;
+        console.log(result3);
+
+        //textContent-return html text content including spacing but excluding inside element
+        var result4 = document.querySelector('#data').textContent;
+        console.log(result4);
+
+
+        //outerhtml-return whole html element as it is
+        let result5 = document.querySelector('#data').outerHTML;
+        console.log(result5);
+
+
+
+        // ********************************************************************************
+
+        // classList property- return a class list in a html collection 
+
+        // 3 Methods
+
+        //classList.add()
+        //classList.remove()
+        //classList.toggle()
+
+        let result6 = document.getElementById('box').classList;
+        console.log(result6);
+
+
+
+
+        //removeClass
+
+        const RemoveClass = () => {
+            var result7 = document.getElementById('box').classList.remove('box1');
+            // console.log(result7)
+
+
+        }
+
+        //add class
+
+        const Addclass = () => {
+            document.getElementById('box').classList.add('newclass');
+        }
+
+        //toggle
+        const Toggleclass = () => {
+            box.classList.toggle('newclass');
+        }
+
+        // ****************************************************************************
+        // className()-return only class name in a string format
+
+        var result8 = document.getElementById('box').className;
+        console.log(result8);
+
+
+
+        // *************************************************************
+
+        // getAttribute()
+        // setAttribute()
+
+
+        // var result9=document.querySelector('#heading1').getAttribute('id');
+        var result9 = document.querySelector('#heading1').getAttribute('class');
+        console.log(result9);
+
+
+        //set attributes
+        // setAttribute(attribute,attributename)
+
+        document.getElementById('heading1').setAttribute('class', 'newclass')
+
+
+        // ***********************************************************
+
+
+        //appendChild()
+        //replaceChild()
+        //createElement()- used to create html element dynamically
+        //createTextNode()- used to craete html text content
+        //childNode()
+
+        var h1=document.createElement('h1');
+        // var h1=document.createElement('marquee');
+        h1.innerText="Welcome Dear To The HTML DOM";
+        document.body.appendChild(h1)
+
+    </script>
+
+</body>
+
+</html>
