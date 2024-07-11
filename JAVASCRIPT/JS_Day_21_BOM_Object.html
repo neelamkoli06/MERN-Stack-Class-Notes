@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- BOM Object
+    
+    Browser Object Model
+
+    -->
+
+
+    <!-- History Property -->
+
+    <button onclick="history.back()">Go Back</button>
+    <button onclick="history.forward()">Go Forward</button>
+    <button onclick="history.go(2)">Go</button>
+
+
+    <hr>
+
+
+
+    <!-- print functionality -->
+    <button onclick="window.print()">Click Here to print</button>
+
+    <hr>
+
+    <!-- open a new window -->
+    <button onclick="window.open('https://www.google.com')">Click Here to open A Window</button>
+
+    <!-- update -->
+    <button onclick="window.open('https://www.google.com','chrome','height=400px width=400px')">Click Here to open A
+        Window</button>
+
+        
+    <button onclick="window.open('https://www.amazon.in','chrome','height=200px width=600px')">Click Here to open A
+        Window</button>
+
+    <button onclick="window.close()">Click Here to close window</button>
+
+
+    <script>
+
+        var doc = document;
+        console.log(doc);
+
+
+        // global object In JS
+        var result = window;
+        console.log(result);
+
+        //In Js Treat as a Global Object
+        console.log(this)
+
+        var result2 = window.document;
+        console.log(result2);
+
+        // **************************************************
+
+        // dialog boxes in JS
+
+        // alert()
+        // prompt()
+        // confirm()
+
+
+
+        // alert pop up box
+        // alert -ok button and return undefined
+
+        // let result3 = alert('hello Alert Dialog Box');
+        // console.log(result3);//undefined
+
+
+        // *********************************************************************
+
+        //prompt- used to take input data dynamically from user
+        // let result4=prompt(msg,bydefault value)
+
+        // ok- return data
+        //cancel- return null
+
+        // let result4 = prompt('Enter Your Name', "John");
+        // alert(result4);
+
+
+        // *************************************************************
+
+        // confirm- ask for confirmation
+
+        // ok -true
+        //cancel-false
+
+        // let result5=confirm('Are You Sure ?');
+        // console.log(result5);
+
+
+        // *******************************************************************************
+
+        // history property
+
+        var his = window.history;
+        console.log(his);
+
+
+        // 3 methods
+
+        //history.back()
+        //history.forward()
+        //history.go()
+
+        // ****************************************************************************************
+
+        var loc = location;
+        console.log(loc);
+
+        //port
+        //protocol
+        //hostname
+        //pathname
+        //origin
+        //href
+
+        console.log(loc.hostname)
+        console.log(loc.port)
+        console.log(location.pathname)
+        console.log(location.protocol);
+        console.log(location.origin);
+
+        // conditional rendering
+        if (loc.pathname == "/path") {
+            loc.replace('/replacepath')
+        }
+
+
+        // ********************************************************
+
+        // navigator
+
+        var nav = window.navigator;
+        console.log(nav);
+
+
+        // appName
+        console.log(nav.appName)//Netscape
+        console.log(nav.appCodeName)//mozilla
+
+        console.log(nav.cookieEnabled)//true
+
+
+        // clipboard
+        console.log(nav.clipboard.readText)
+        console.log(nav.clipboard.writeText)
+
+
+        //blutooth
+        //network connection
+        //geolocation
+        //media devices
+
+        console.log(nav.geolocation)
+        // console.log(nav.geolocation.getCurrentPosition)
+
+        // console.log(nav.keyboard);
+
+
+        // ************************************************************************
+
+        // screen
+
+
+        console.log(screen);
+
+        console.log(screen.availHeight);
+        console.log("height " + screen.height);
+        console.log(screen.colorDepth)
+        console.log(screen.pixelDepth)
+
+        //1366
+        console.log(screen.availWidth);
+
+        // ****************************************************************************
+
+        // innerHeight()--return inner heigth of window screen
+        // outerHeight()//return total height window screen
+
+        //innerWidth-retuen inner width of a window screen
+        //outerwidth- return total width of a total screen
+
+        console.log("Inner Height " + window.innerHeight)
+        console.log("Outer Height " + window.outerHeight)
+
+
+        //1366
+        console.log("Outer Width : " + window.outerWidth)
+        console.log("Inner Width : " + window.innerWidth)
+
+
+
+        // *****************************************************************************
+
+
+        // if (window.scrollY > 300) {
+            // window.
+        // }
+
+        // window.scrrollTop
+        // window.scrollTo()
+
+        // window.addEventListener('scroll', function () {
+        //     if (window.scroll) {
+        //         window.scrroll({
+        //             top: 0,
+        //             behavior: 'smooth'
+        //         })
+        //     }
+
+        // })
+
+
+
+    </script>
+</body>
+
+</html>
