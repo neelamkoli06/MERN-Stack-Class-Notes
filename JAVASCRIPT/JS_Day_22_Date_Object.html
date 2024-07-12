@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Date Object
+    
+    To work on date and time
+    -->
+
+    <script>
+        var today = new Date();
+        console.log(today);
+
+        // separate date 
+        // get method
+        console.log(today.getFullYear());//2024
+
+        // return a no
+        console.log(today.getMonth());//6 - starts indexing from 0 -  0-Jan 1-feb 6-july
+
+
+        // proper month no
+        console.log(today.getMonth() + 1);//7
+
+        //day
+        console.log(today.getDay());// -starts from 0 - -0-sun 1-mond frid-5
+
+        // date
+        console.log(today.getDate());//12
+
+        console.log(today.getHours());
+
+        console.log(today.getMinutes());
+
+
+
+        // ********************************************************
+        // set date
+
+        // var newdate=new Date('15 August 2025,10:10:10');
+
+        var newdate = new Date();
+
+        // separate
+        //set method
+
+        newdate.setFullYear(2030);
+        newdate.setMonth(11)
+
+        newdate.setDate(25)
+
+        console.log(newdate);
+
+
+        // *****************************************************************
+
+        //  3 Methods
+
+        //toLocaleDateString() - return only todays date
+        //toLocaleTimeString()-  return only current time
+        //toLocaleString()- Both Date and time
+
+        var result = new Date()
+        alert(result);
+
+        // toLocaleDateString()
+        alert(result.toLocaleDateString());
+
+        //toLocaleTimeString()
+        alert(new Date().toLocaleTimeString());
+
+        // Date and time at a same time
+        alert(result.toLocaleString());
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Math object -->
+
+    <script>
+        // to perform mathimatical operations
+
+
+        const math = Math;
+        console.log(math);
+
+
+        // PI
+        console.log(Math.PI)
+
+        console.log(Math.LN2)
+
+        console.log(Math.E)
+
+        // *********************************************************
+
+        // min max method
+
+        console.log(Math.min(100, 350, 450, 60, 700, 100));//60
+
+        // max
+        console.log(Math.max(100, 350, 450, 60, 700, 100));//700
+
+        const arr = [100, 3000, 500, 300, 1500, 700];
+        console.log(Math.min(arr));//NaN
+
+
+        // *****************************************************
+
+        // spread operator
+        // ...
+        //Modern JS Features
+        // extract array values
+        // replace array methods- concat, replace...
+
+        console.log(Math.min(...arr));
+        console.log(Math.max(...arr));
+
+        // ***********************************************************
+
+        // round-return a rounded value
+        //>.50 - return largest integer
+        //<.50 - return nearest smallest integer no
+
+        // ceil-return nearest largest integer
+        // floor- return nearest smallest integer
+
+
+        console.log(Math.round(23.34));//23
+        console.log(Math.round(23.55));//24
+
+        console.log(Math.round(-45.55));//-46
+        console.log(Math.round(-45.25));//45
+
+
+        console.log(Math.ceil(45.65));//46
+        console.log(Math.ceil(45.15));//46
+
+        console.log(Math.floor(45.65));//45
+        console.log(Math.floor(45.15));//45
+
+        // fround-returns the nearest single precision float representation of a number
+        console.log(Math.fround(23.23))
+
+        console.log(Math.ceil(-23.23));//-23
+        console.log(Math.floor(-24.23));//-25
+
+        // ****************************************************8
+
+
+        // trunc- remove decimal no and return
+        console.log(Math.trunc(23.34444));//23
+        console.log(Math.trunc(-23.34444));//-23
+
+
+        // ********************************************
+
+        // random
+        // it returns a pseudorandom no between 0 and 1
+
+        console.log(Math.random());
+
+        // 2 digit no
+        // alert(Math.random()*100);
+
+        // proper integer
+
+        // alert(Math.trunc(Math.random() * 100));
+
+        //6 digit otp
+
+        alert("Your OTP Is "+Math.trunc(Math.random()*10000))
+
+        // **************************************************************
+
+        // sqrt
+        // cbrt
+        // pow()
+
+
+        console.log(Math.sqrt(25));//5
+        console.log(Math.sqrt(625));//25
+
+        console.log(Math.cbrt(27));//3
+        console.log(Math.cbrt(64));//4
+        console.log(Math.cbrt(60));//4
+
+
+        // pow(base,power)
+        console.log(Math.pow(3,3))//27
+
+        console.log(Math.pow(3,2))//9
+        
+
+
+        //same as exponetiation operator- **
+        console.log(3**2);//9
+        console.log(3**3);//27
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
