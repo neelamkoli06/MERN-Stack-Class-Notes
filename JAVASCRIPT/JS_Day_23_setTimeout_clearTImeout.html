@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- setTimeout- executes a function only once in a specific interval -->
+
+
+    <button onclick="StartTimeout()">Start Timeout</button>
+
+    <button onclick="StopTimeout()">Stop Timeout</button>
+
+    <hr><br>
+    <img src="./teddy.jpg" alt="" style="border:solid orangered 5px;" id="img">
+
+
+    <script>
+
+        function StartAni() {
+
+            document.getElementById('img').style.borderRadius = "50%";
+
+        }
+        // immediate called
+
+        // setTimeout(StartAni,3000)
+
+        var x;
+        function StartTimeout() {
+            alert('start Timeout')
+            x = setTimeout(StartAni, 4000);
+
+        }
+
+
+
+        const StopTimeout = () => {
+            alert('stop timeout')
+            clearTimeout(x);
+        }
+
+        // *****************************************************************************
+        // setTimeout(()=>{
+        //     document.getElementById('img').style.borderRadius = "50%";
+
+        // },4000)
+
+
+        // ******************************************************************
+        // setInterval(StartTimeout,2000);
+
+        // setTimeout(StartTimeout,5000)
+
+        // ****************************************************************************
+        // syntax
+
+        // setInterval(() => {
+        //     alert('hello dear setInterval');
+        // }, 2000);
+
+
+        // setTimeout
+
+        // setTimeout(()=>{
+        //     alert("hello setTimeout")
+        // },2000);
+    </script>
+
+
+</body>
+
+</html>

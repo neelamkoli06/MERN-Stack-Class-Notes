@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- setInterval- it executes  a function multiple times in  specific interval -->
+
+    <button onclick="StartAni()">Start Animation 1</button>
+
+    <button onclick="startInterval()">Start Interval</button>
+
+    <button onclick="StopInterval()">Stop Interval</button>
+
+    <hr><br>
+
+    <img src="./teddy.jpg" alt="" id="img">
+
+    <script>
+
+        var mar = 0;
+
+        function StartAni() {
+            mar += 100;
+            document.getElementById('img').style.marginLeft = mar + "px";
+        }
+
+        // setInterval(handler,ms time)
+        // setInterval(StartAni,1000)
+
+        var x;
+
+        const startInterval = () => {
+
+            alert('start Interval');
+            x = setInterval(StartAni, 1000);
+        }
+
+
+        // **********************************************
+
+        // clearInterval- to clear the set interval
+        function StopInterval() {
+            alert('Stop Interval');
+
+            // 
+            clearInterval(x);
+        }
+
+    </script>
+</body>
+
+</html>
