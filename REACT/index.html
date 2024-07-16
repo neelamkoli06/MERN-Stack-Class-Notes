@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- React 18 CDN Link -->
+
+
+    <!-- React For UI  -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+
+    <!-- React DOM - For DOM manipulation and data rendering -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+
+    <!-- ****************************************************************************** -->
+     <!-- Local Setup  -->
+
+     <script src="./react.development.js"></script>
+     <script src="./react-dom.development.js"></script>
+</head>
+
+<body>
+
+
+    <!-- <div id="root"></div> -->
+    <h1 id="root"></h1>
+
+
+
+    <!-- Versions -->
+    <!-- Latest version- 18.2
+     old Version -17 -->
+    <script>
+
+
+
+        // Data rendering React 17
+
+
+        // ReactDOM.render(what,where)
+
+        // ReactDOM.render('Hello Welcome To Modern React JS World ', document.getElementById('root'));
+
+        // ********************************************************************************************
+
+
+        // React 18
+
+        // createRoot- Used to display / Add JSX code or component to browser DOM Tree
+
+        // or
+        // lets you create a root to display React components inside a browser DOM node
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render('Hello Welcome To The Modern ReactJS World!!');
+
+
+
+
+
+
+
+
+// *****************************************************************************************
+
+
+        // React Code
+
+        // 2 types of file
+
+        // Development File / Normal file/ Unminified file/ - Redable, file size large
+
+        // production file- Compressed file- Minified file- file size small- deployment
+
+
+
+    </script>
+</body>
+
+</html>
