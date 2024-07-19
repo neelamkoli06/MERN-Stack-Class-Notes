@@ -57,7 +57,7 @@ Inc. npm is the default package manager for the JavaScript runtime environment N
  and is included as a recommended feature in the Node.js installer
 
 cd
- Isaac Z. Schlueter 
+ Isaac Z. Schlueter
 
  Written In JS
  Free
