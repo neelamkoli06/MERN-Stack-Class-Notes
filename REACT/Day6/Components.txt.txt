@@ -1,0 +1,328 @@
+Components-
+
+
+
+**************************************************************
+
+IS A Building block of React Application
+Is Display UI data jsx code i.e small piece of code
+Reusable,
+Extensible
+
+Separation
+
+-
+Every Component must return some markup (JSX) and separate JS File
+
+
+
+**********************************************************
+Import export
+
+Every JS file is a module and each module need to export
+
+Reusablity
+
+1 default export-  App import 
+multiple named exports- {name}
+
+
+************************************************
+
+
+SPA- Single Page Application- Components Are Intergrated- 
+
+MPA- Multiple page- multiple times reloading
+
+
+Like SPA- jquery and AJAx- 
+************************************************
+
+
+Types of Components
+
+
+
+1. Stateless Functional Components- 
+
+ No state,
+ No render method,
+
+
+Resuable
+ simple,easy,
+
+ Better to use
+
+ cant extends Component
+
+
+ hook used
+
+ 
+
+ ********************************************************
+
+
+
+
+
+ ************************************
+
+2.Statefull Class Component - 
+
+
+State,-
+built in react object in a class component
+hold data and have state.
+
+render method
+
+We can extend
+
+ Reusable
+
+
+Use Lifecycle methods
+
+******************************************************
+Adv-  we can extends or Reusable class Components
+
+
+- Disadvantage
+
+
+Complex,
+Heavy and slow interaction
+Consume more memory
+
+Not support to low level features
+
+complex in config.
+
+cant directly interact with hardware services
+
+
+
+***************************************
+
+
+//IMP=>
+
+ We can derived or pass data through " props " to another Component.
+works with Hooks-
+
+
+
+******************************************
+
+props:   built in react object
+         helps to pass data from 1 component to another component
+         Cant Change or update
+
+         Immutable
+
+         Access child component;
+
+***************************************
+
+state-
+
+built in object in a class component
+built in react object
+Holds the data i.e Hold and contains info about component
+
+We can Change and update state whenever we want i.e on events or actions
+i.e - Mutable
+- we can change state
+
+
+limited to that specific component
+-Cant access child
+
+
+-  Determine behavior of a component and how it will render the 
+
+***************************************
+this.state=({
+
+})
+
+this.setState({
+        
+})
+
+*******************************
+
+render method-
+
+// render=
+
+//Used in class component
+//is a pure method-   not change input and output values or result
+//doesnt modify component state
+//not directly interact with browser
+
+//return react elements,Array.fragments,string,array,number,boolean i.e JSX or  markup
+
+
+
+*************************************************************8
+
+
+//super method-
+
+// when we inherit parent component in any class  then used super method
+//i.e so 1st we need to call parent constructor to accessing parent methods and properties in child or derived class component i.e need to call  then=>  
+ // The super keyword is used to call the constructor of
+    //  its parent class to access the parent's properties and methods.
+
+    //i.e when we inherit parent component in child class
+
+
+
+
+*****************************************
+
+//   What is the constructor in JavaScript?
+
+//automatically invoked
+
+// A constructor is a special function that creates and initializes an object instance of a class.
+//  In JavaScript, a constructor gets called when an object is created using the new keyword. 
+// The purpose of a constructor is to create a new object and set values for any existing object properties.
+
+  constructor()
+  {
+    super();
+    console.log('Constructor Called');
+
+  }
+
+
+// ***************************************************************
+
+import React from 'react'
+
+const App=()=>{
+        return(
+                <>
+
+                </>
+        )
+}
+
+export default App;
+// ***************************************************************
+
+// React.Component => parent Component/base class
+
+// App_1- Child Component/derived Component
+
+
+
+class App extends React.Component{
+
+}
+
+
+******************************************************
+
+
+props eg
+
+
+events- do something operations on users action or activity
+
+ 
+ clickHere=()=>{
+
+ }
+
+//Functional component
+
+<button onClick={()=>ClickHere()}></button>
+<button onClick={ClickHere}></button>
+
+//class
+<button onClick={this.ClickHere}></button>
+<button onClick={()=>this.ClickHere()}></button>
+
+//render method
+<button onClick={clickhere}></button>
+
+
+for this u need  bind method 
+<button onClick={this.Demo}></button>
+<button onClick={this.Demo}></button>
+
+
+<button onClick={()=>Demo()}></button>
+
+
+
+
+function clickHere()
+{
+
+}
+
+
+
+
+this.state=({
+
+stud1:true,
+stud2:false,
+stud3:false,
+
+})
+
+
+button onClick
+
+
+
+
+{
+        this.state.stud1:
+
+<div>
+//student data
+</div> :null
+
+
+}
+
+
+
+
+
+this.setState({
+
+stud1()
+{
+        this.setState({
+                stud1:!this.state.stud1
+                stud2:false
+                stud2:false
+        })
+}
+})
+
+
+
+
+
+
+
+
+
+
+In React -  One Way Binding-  One directional Data flow - parent to child
+in Angular-  Two way binding
+
+
+
+
+

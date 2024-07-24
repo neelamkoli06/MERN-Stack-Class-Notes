@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <button onclick="UpdateData()">Update Obj Name</button>
+    <h1>Welcome HTMl</h1>
+    <script>
+
+        const obj = {
+            name: 'Pratik'
+        }
+
+        const UpdateData = () => {
+            obj.name = "Akhilesh";
+
+            console.log(obj);
+            document.write(obj.name)
+        }
+
+
+        console.log(obj.name)
+
+        document.write(`<h1>${obj.name}</h1>`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+JSX_
+
+
+
+extension of JS or JS XML (write custom tag)
+
+//We can write JS and HTML/XML In one File
+
+
+
+Rules=> 
+
+
+Must have JSX Container=>  <React.Fragment> </React.Fragment> or <> </>
+Must have JSX Container=>  <React.StrictMode> </React.StrictMode> or <> </>
+
+
+React.Fragment=  is A container 
+
+
+No void type tags i.e must opening and closing tag <> img,hr,br,input </>  or self closing
+
+<img></img>
+<img/>
+<img></img>
+ In JSX- Not Allowed <img>
+
+
+*******************************************
+
+You cant bind value to attribute 
+i.e JSX only allows property binding  -- className property
+
+
+
+<div class="ABC XYZ" id=box>
+
+
+document.getElementById('box').className;
+
+
+either warning- invalid DOM property
+
+<div class="ABC"></div>
+
+
+
+
+<label htmlFor="">
+*******************************************************
+
+we can use both property and Attributes 
+
+
+
+
+
+
+
+*******************************************************
+
+React.StrictMode 
+
+is a tool that highlights potential issues in a programme. 
+It works by encapsulating a portion of your full application as a component.
+ StrictMode does not render any visible elements in the DOM in development mode
+, but it enables checks and gives warnings.
+
+
+*******************************************************
+//babel- JS compiler or Transpiler- JSX code into  plain JS code
+
+
+
+
+********************************************************
+
+Virtual DOM-    copy and lighweight representation of Regular DOM on your browser memory
+                Updating and rendering results faster
+
+             i.e  when UI element render=> creates VD copy=> state object change=> if change updating only specfic state object instead of updating complete state of application => Create new VD copy=> pass=> compare=>if same avoid =>either rendering result to browser
+
+
+Regular DOM-takes time to updating and rendering the results like in Jquery,js,Angular
+
+
+
+
+
+**************************************************
+
+setup  React Project
+
+npm init -y
+
+npx create-react-app my-app
+
+cd my-app
+npm start
+
+
+3000 Port 
+
+Total Port- 65536
+**************************************************
+Assessment On React
+
+//1-
+
+date and Update=> Current time Update=> Digital Clock
+
+*************************************************************
+
+//2-  Title=>Frond/backend/Fullstack=> Create Lists
+
+Front end
+     <ol>
+        <li></li>
+     </ol>
+
+   ****************************************************************  
+//3-  
+
+     Name- Heading tag
+     img-  Image
+     Description
+     Time-
+     Date-
+     
+
+          
+
+
+
