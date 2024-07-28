@@ -1,0 +1,80 @@
+var let vs const
+👉🏻FAT Arrow Function
+
+👉🏻Spread Operator
+👉🏻Rest Parameter
+👉🏻Rest operator
+👉🏻Array Destructring
+👉🏻Object Destructring
+👉🏻Higher order function-
+👉🏻Function 1st class citizens- function treated as like any other variable
+👉🏻Dom and it's working
+👉🏻template literals
+👉🏻default parameter
+
+// IMP Points 
+//Sync/ Async execution- Callback function->Callback hell(issue)-> Promises ->Async/await
+
+//oops 
+
+
+
+prototying
+event looping
+
+JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
+ This model is quite different from models in other languages like C and Java.
+
+call apply bind method
+
+session mamangement- local storage vs 
+
+how js work-js engine
+
+👉🏻Closures
+
+
+**************************************************************
+
+
+
+👉ECMA Script 6
+👉🏻Array Methods and String 
+👉🏻Push, Pop, Shift, unshift
+👉🏻Concat Vs Join
+👉🏻Slice vs Splice
+👉🏻reduce, for each, map
+👉🏻Closures
+👉🏻modules
+👉🏻pure function in js
+👉🏻Async and await
+👉🏻Js Single Threaded or multithreaded
+👉🏻Synchronous or Asynchronous
+👉🏻setTimeout va setInterval functions
+👉🏻Callback and callback hell
+👉🏻solution for callback hell
+👉🏻SetTimeout and promise which one executed first- 
+callback is assested to promises which goes
+ into microstack queue so having higher priority
+  than callstack queue
+
+So Promises will executed first
+👉🏻
+
+
+
+
+
+HOF
+
+******************************************************************************8
+
+for each vs map
+
+filter find
+some and every
+reduce
+
+
+addEventListerner method
+
