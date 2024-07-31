@@ -1,0 +1,313 @@
+// routing
+
+//     helps to navigating or redirecting to multiple components or pages without reloading of our web page.
+//     provide  declarative library  for react application
+
+//      react-router-dom.
+
+// latest version- 6.23.0
+// old version -5
+
+
+//     handles common operations such as handling url , params,redirecting and loading the data
+
+//     SPA- 
+
+//     Installation
+
+//     npm i react-router-dom      
+//     npm i react-router-dom@6
+
+
+
+// npm init
+// npx create-react-app myapp
+// cd myapp
+// npm start
+
+
+
+// NavLink-  Which represents Active class i.e we get to know on Which component we are currently
+
+// ***********************************************************************************
+
+
+// hook- is like a function to perform multiple operations,validations,manipulationns and more
+
+//holds the statefull logic i.e Provide Built in functionality
+
+// React Hooks must be called in a React function component or a custom React Hook function
+
+
+// In v6
+// useNaviagte()-  To navigate or redirect to multiple component
+
+//to see history
+
+
+// useLocation()
+
+
+//v5
+// useHistory()
+
+
+// ****************************************************************
+
+// in V5
+
+
+// creates a new object and used whenever we want and return history and location object
+
+
+
+
+// useHistory()-  Replaced
+
+// const history=useHistory();
+
+// history.back()
+// history.forward()
+// history.push('/about');
+
+
+
+// useLocation()
+// location.pathname;
+// location.key;
+
+// location.replace()
+
+
+// ***************************************
+
+// https:-NP
+//www.flipkart.com-domain
+// /samsung-galaxy-m14-4g-sapphire-blue-64-gb/p/itm3193199adbbec =path/search
+
+// &-variables
+// ?pid=MOBGYYZ8AGMMDB8H
+// &lid=LSTMOBGYYZ8AGMMDB8HWZGLMV
+// &marketplace=FLIPKART
+// &store=tyy%2F4io&srno=b_1_1
+// &otracker=browse
+// &fm=organic
+// &iid=3f2c1e06-21cd-447c-8746-1756a8acdcb1.MOBGYYZ8AGMMDB8H.SEARCH&ppt=hp&ppn=homepage&ssid=fqpgphr5cw0000001722324185265
+// **********************************
+
+
+// useParams-
+
+// Returns an object of key/value pairs of the dynamic
+//  params from the current URL that were matched by the route path.
+
+
+
+// Return an object in key:value pair of url parameter by dynamiaclly
+
+// i.e get dynamically value
+
+
+// used to access match params of current <Route path="">
+//child router inherits all paramas from their parent router
+
+
+
+// *************************************************
+// Without hook
+
+
+// const User=({match}=>{
+//   return{
+//     match.params.name
+//   }
+// })
+
+// ********************************************
+
+  // useMatch()
+
+// used to create relative subroute paths that matches with particular route
+
+// require pattern argument and does not accept pattern as an array
+
+
+
+// Returns a PathMatch object if the given pattern matches the current URL.
+//  This is useful for components that need to know "active" state, e.g. <NavLink>.
+
+// The useMatch hook in React Router is a powerful tool that enables us to 
+// determine if the current URL matches a particular path. 
+
+// It provides a straightforward way to conditionally render components or
+//  perform logic based on the matched path.
+
+
+//pathMatch Object
+// {
+//   "params": { },
+//   "pathname": "/service",
+//     "pathnameBase": "/service",
+//       "pattern": {
+//     "path": "/service",
+//       "caseSensitive": false,
+//         "end": true
+//   }
+// }
+
+
+
+https://blog.logrocket.com/using-hooks-react-router/
+
+
+//  ***********************************************************
+
+
+
+  {/* nested routing-  one path into another path */ }
+
+  // eg.https://www.amazon.in/minitv/ct/web-series
+
+// solution
+{/* Shared routing- 
+      
+      Outlet- it Allows us to share one component to multiple other components i.e outlet-
+        no need to import and export */}
+
+{/* Index  Routing */ }
+
+
+
+// ************************************************************************************
+
+  // function AppLayout() {
+  //   return (
+  //     <>
+  //     <Header />
+  //     < Outlet />  Placeholder for nested routes 
+  //     < Footer />
+  //     </>
+  //   );
+  // }
+
+// function App() {
+//   useEffect(() => {
+//     Aos.init({ duration: 2000 });
+//   }, []);
+
+//   return (
+//     <div>
+//     <div className= "mouse-cursor style4" > </div>
+//     < Router >
+//     <Routes>
+//     <Route path="/" element = {< AppLayout />}>
+//       <Route index element = {< Slider />} />
+//         < Route path = "about" element = {< Aboutus />} />
+//           < Route path = "services" element = {< Services />}
+// <Route path="*" element = {< PageNotFound />} />
+//   < /Route>
+
+// {/* Separate Admin Routes */ }
+// <Route path="/admin" element = {< AdminLogin />}>
+//   <Route index element = {< AdminMenu />} />
+//     < Route path = "/forgotpassword" element = {< ForegtPassword />} />
+//       < Route path = "login" element = {< AdminLogin />} />
+//         < /Route>
+//         < /Routes>
+//         < /Router>
+//         < /div>
+//   );
+// }
+
+// export default App;
+
+// **************************************************************************************
+
+//   function MainLayout() {
+//     return (
+//       <>
+//       <Header />
+//       < Outlet /> {/* Placeholder for nested routes */ }
+//       < Footer />
+//       </>
+//     );
+//   }
+
+// function App() {
+//   useEffect(() => {
+//     Aos.init({ duration: 2000 });
+//   }, []);
+
+//   return (
+//     <div>
+//     <div className= "mouse-cursor style4" > </div>
+//     < Router >
+//     <Routes>
+//     {/* Main App Routes */ }
+//     < Route element = {< MainLayout />}>
+//       <Route path="/" element = {< Slider />} />
+//         < Route path = "about" element = {< Aboutus />} />
+//           < Route path = "services" element = {< Services />} />
+//             < Route path = "career" element = {< Career />} />
+//               < Route path = "blog" element = {< Blog />} />
+//                 < Route path = "contact" element = {< Contact />} />
+//                   < Route path = "blog-detail/:id" element = {< BlogDetail />} />
+//                     < Route path = "*" element = {< PageNotFound />} />
+//                       < /Route>
+
+// {/* Admin Routes - Directly defined without MainLayout */ }
+// <Route path="/admin" element = {< AdminMenu />}>
+//   <Route path="forgotpassword" element = {< ForegtPassword />} />
+//     < Route path = "login" element = {< AdminLogin />} />
+//       < Route path = "users" element = {< Users />} />
+//         < /Route>
+//         < /Routes>
+//         < /Router>
+//         < /div>
+//   );
+// }
+
+
+
+// **************************************************************************************************
+
+// Same Page Scrolling
+
+// import React from 'react';
+// import { Link as ScrollLink, Element } from 'react-scroll';
+
+// function Admin() {
+//     return (
+//         <div>
+//             <h1>Admin Page</h1>
+//             <nav>
+//                 <ScrollLink 
+//                     to="signup" 
+//                     smooth={true} 
+//                     duration={500} 
+//                     offset={-50} 
+//                 >
+//                     Signup
+//                 </ScrollLink>
+//                 <ScrollLink 
+//                     to="forgot" 
+//                     smooth={true} 
+//                     duration={500} 
+//                     offset={-50} 
+//                 >
+//                     Forgot Password
+//                 </ScrollLink>
+//             </nav>
+//             <Element name="signup" style={{ padding: '100px 0' }}>
+//                 <h2>Signup Section</h2>
+//                 <p>This is the Signup section content.</p>
+//             </Element>
+//             <Element name="forgot" style={{ padding: '100px 0' }}>
+//                 <h2>Forgot Password Section</h2>
+//                 <p>This is the Forgot Password section content.</p>
+//             </Element>
+//         </div>
+//     );
+// }
+
+// export default Admin;
