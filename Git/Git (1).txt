@@ -1,0 +1,143 @@
+
+Git
+
+**************************
+Version Control System- Software
+
+- Features-
+
+
+Track code changes i.e history of your code/project
+Powerful
+Popular
+Free
+Faster
+ Scalable
+ Widely used
+
+
+Revert back code i.e roll back/undoing changes
+
+work with team 
+
+colloborate environment
+
+
+Avoid over writing of code on same file
+
+
+Tool
+
+
+****************************************************************************
+
+Git hub-
+
+
+To store and manage your code  using git 
+
+Upload code/ project
+
+Allow developer to manage and store your code
+
+
+create Repo i.e project folder
+
+eg. instagram upload  posts
+
+
+
+
+WEBSITE MANAGE AND STORE OUR CODE OF PROJECT
+
+
+
+1-  Create REPO-  create your project files,code files folder
+
+
+2. Setup in Out local - VS code
+
+https://git-scm.com/downloads
+open git bash 
+
+git --version
+pwd
+
+ls
+clear
+
+
+3
+ Config git
+
+git config --global user.name ""
+git config --global user.email ""
+
+ to check done or not
+
+
+ git config --list
+ 
+
+
+
+
+ ~ - we are in our root directory
+
+
+**************************************************************8
+
+1-Clone command
+
+
+
+local env-  laptop- vs code
+Remote env- github
+
+git clone https://github.com/cloudinfotechs/sampleRepo.git
+
+***************************************
+2 types of file
+
+visible
+
+hidden file - 
+
+ ls-a
+
+
+ status
+ -git status
+
+
+
+status-
+
+s
+
+Untracked- new files changes i.e git doenst track which not yet commit
+
+Modfied-changes
+
+Staged- file is ready to commit i.e we have add file but not yet commit
+Unmodified-unchangd
+
+
+
+****************************
+
+1- changes
+2.git status
+3. git add Readme.md   4- to add multiple-  git add .
+4-git status
+5- git commit -m "message"
+6- git status
+
+
+local repo- remote repo-
+
+Push command
+
+git push origin main
+
+Transfer local to git hub
