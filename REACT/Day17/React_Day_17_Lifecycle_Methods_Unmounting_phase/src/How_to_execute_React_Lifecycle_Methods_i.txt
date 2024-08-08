@@ -1,0 +1,51 @@
+
+
+
+How_to_execute_React_Lifecycle_Methods_in  A functional Component
+
+
+
+componentDidMount()
+componentDidUpdate()
+componentWillUnmount()
+
+
+**********************************************************************************8
+
+componentDidMount()
+
+
+
+useEffect(() => {
+    
+     console.log("This code will execute when the component is mounted");
+ }, []);
+
+
+**************************************************************************
+
+componentDidUpdate()
+
+
+useEffect(()=>{
+
+console.log("This code will execute when the component updates"); 
+
+},[count])
+
+
+*******************************************************
+
+componentWillUnmount()
+
+
+useEffect(()=>{
+
+return ()=>{
+
+  console.log("Behavior right before the component is removed from the DOM.");
+
+}
+
+},[])
+
