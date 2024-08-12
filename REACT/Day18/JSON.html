@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        const obj = {
+            id: 1,
+            name: 'Kartik',
+            skill: 'ReactJS',
+            CTC: '10LPA',
+        }
+
+        console.log(obj);
+
+
+        // JSON Format
+
+        // Convert JS Object into JSON Format
+        // JSON.stringify()
+
+        console.log(JSON.stringify(obj));
+        //{"id":1,"name":"Kartik","skill":"ReactJS","CTC":"10LPA"}
+
+        // Array
+        
+
+        const arr=["HTML","CSS","Modern JS","MUI","React"];
+        console.log(arr);
+        console.log(JSON.stringify(arr));
+
+        // ************************************************************************************
+
+        const JSONobj='{"id":1,"name":"Pratik","empEmail":"pratik@gmail.com"}';
+
+        console.log(JSONobj);
+
+        // Convert JSON String into an Plain JS Object values
+        // Converts a JavaScript Object Notation (JSON) string into an object.
+        // JSON.parse()
+
+
+        console.log(JSON.parse(JSONobj));
+
+
+        //
+        const jsonarr='["JSON","API","SDLC","MUI"]';
+        console.log(jsonarr)
+
+        console.log(JSON.parse(jsonarr));
+
+    </script>
+</body>
+
+</html>
