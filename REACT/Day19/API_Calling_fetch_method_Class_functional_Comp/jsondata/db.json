@@ -1,0 +1,49 @@
+{
+  "User":[
+    {
+
+      "id":1,
+      "name":"Pranav",
+      "skill":"ReactJS",
+      "Email":"pranav@gmail.com",
+      "empRole":"Front end Develoeper"
+    },
+
+    {
+
+      "id":2,
+      "name":"Akhilesh",
+      "skill":"ReactJS",
+      "Email":"akhilesh@gmail.com",
+      "empRole":"Front end Develoeper"
+    },
+
+    {
+
+      "id":3,
+      "name":"John",
+      "skill":"ReactJS",
+      "Email":"john@gmail.com",
+      "empRole":"Front end Develoeper"
+    },
+
+    {
+
+      "id":4,
+      "name":"Peter",
+      "skill":"ReactJS",
+      "Email":"peter@gmail.com",
+      "empRole":"Front end Develoeper"
+    },
+    {
+
+      "id":5,
+      "name":"Amol",
+      "skill":"ReactJS",
+      "Email":"amol@gmail.com",
+      "empRole":"Front end Develoeper"
+    }
+
+    
+  ]
+}
