@@ -1,0 +1,184 @@
+HTML-
+
+
+semantic elements
+Elements-  Block level and Inline level elements
+graphics tag
+
+HTML FORM
+
+HTMl5 features
+
+
+*******************************************************
+
+
+pseudo classes selector- : - link,hover,active,visited,first-child(),last-child(),nth-child()
+pseudo element sel- :: before, after, ::first-line,::mark,::selection 
+
+CSS3-
+
+
+Selectors
+Box model
+flexbox
+Positioning
+CSS effect
+
+media query
+
+Center box using flexbox
+**********************************************************************
+
+JS-  keywords
+     Functions
+
+     Fat Arrow Funtion/lamda function/Arrow function
+
+
+     Object
+     Array and its methods-Most commonly asked concept
+
+     Custom code
+
+
+     sort
+     reverse
+
+     Non repeating character
+     Duplicated values remove from Array
+     EMpty Array
+
+     Data types
+     
+     Modern and ES-5 Operators
+
+     BOM
+
+     DOM
+
+
+Spread and Rest Opeartor
+
+Rest Paramemter
+
+Array and Object Destructring
+
+Higher order function
+
+Function as 1st class citizen
+
+Hoisting
+
+
+
+     SetTimeout vs SetInterval
+
+
+     callback function and Callback hell and its solution-  Promises and Async and Await
+
+
+
+Logical Question
+
+Call Apply bind method
+
+
+
+Closures-
+Currying
+Event looping
+
+
+Session Management-
+
+
+
+Template iterals-
+
+
+promises
+async await
+
+
+ES-6  Features
+
+
+***********************************************************
+
+ES-6 Features in React
+
+
+In JS and ReactJS
+
+
+
+Why you Choose React
+ES-6 Features in React
+
+JSX
+
+Babel
+
+cmd to create react app- install
+Folder Project
+
+
+Virtual DOM
+
+
+NPM
+****
+
+Components and its types- Stateless Functional COmponents-  Hooks
+
+Statefull class Components-  LifeCycle Methods and its Methods
+
+****
+
+Data binding
+
+
+
+State,props,
+
+
+Routing
+
+webpack
+
+SPA
+
+
+How to execute React Lifecycle Methods in a Functional Component (ans- useEffect(()=>{ },[])
+
+eg. componentDidMount()
+
+componentDidUpdate()
+componentWillUnmount()
+
+************************************************
+
+Redux-  Its working and architecture
+
+CRUD opeartion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
