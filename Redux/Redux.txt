@@ -1,0 +1,208 @@
+Redux- 
+
+
+10 Component -  App.js
+
+
+1st Component-  A
+10th Component-  Z-  Prop Drilling- pass data through each component as a props
+
+
+A-D
+
+************************************************************************
+
+Solution-   context API-  useContext hook
+
+
+***************************************************************************
+
+Solution:Redux
+
+For Large Scale Application-Redux  helps for state management
+
+-open ,free source library  for  state management
+-helps to manage centralizing managment and application state
+
+-is  a store-  Application state store in single global object variable i.e store(Redux)
+
+
+i.e- Is  a Container where you can store your whole Application state so  called state managment
+
+
+
+
+
+
+
+
+
+Benefits-  easily testing
+             consitency through out application
+
+
+                   easily debugging
+                   single store
+                   unidirectional data 
+                   
+                   Reducer handles All Logic
+
+
+
+                   **************************************************
+
+    History- 2 June 2015
+
+                By Dan  Abramov And Andrew Clark in 2015
+
+                Is 3rd party library
+                Stable-  4.2.0
+                Latest-  Redux- 4.2.1 -5.0.1
+                         React-Redux-8.0.2  - 8.1.1 - latest 9.1.0
+
+
+                         Redux-thunk- 2.4.2
+
+
+************************************************************************
+
+Redux Architecture
+
+
+Action -> Reducer ->  Store(Redux)
+                        |
+                        |
+                        |            
+    <- View(UI- Component)-   
+
+
+
+
+  Action-  What to perform-  
+            eg. state takes collection of component data or API data  or states 
+
+
+   Action -   Work through dispatch funtion and send it to reducer
+
+
+
+    Reducer- Change the state and return new state
+           - Get data from action and perform logical operations and then send / pass it to the store
+
+    
+    Store(Redux)-  Complete State Of Your React Application
+                   Holds complete state object of your application
+
+
+
+View-  React UI Component
+
+
+
+data:image/png;base64,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
+
+********************************************************
+
+https://react-redux.js.org/introduction/why-use-react-redux
+
+Why Middleware-   For Asynchrounous Execution
+
+Commonly, middlewares are used to deal with asynchronous actions in your app.
+ Redux provides with API called applyMiddleware which allows us to use custom middleware as well as 
+ Redux middlewares like redux-thunk and redux-promise
+
+syntax
+applyMiddleware(...middleware)
+ **********************************************************************
+
+
+Redux_thunk-  Which middleware is best in Redux?
+
+
+Features:
+Simple setup and integration with existing Redux applications.
+Well-suited for simpler use cases and smaller applications.
+Easier to understand for developers familiar with Redux.
+
+**********************************************
+
+Redux Thunk is recommended middleware that helps you to overcome the side effects of basic Redux. 
+Thunk Redux helps you solve complex synchronous logic as well as simple async logic
+
+
+Installing-  npm i redux-thunk
+
+
+
+The word "thunk" is a programming term that means "a piece of code that does some delayed work". 
+*****************************************************************************
+Reference- For Working of Redux-  
+
+  https://www.tutorialspoint.com/redux/redux_middleware.htm
+https://viblo.asia/p/redux-cho-nguoi-moi-bat-dau-part-3-middleware-3Q75wDXMKWb
+
+
+********************************************
+
+Redux Toolkit
+The official, opinionated, batteries-included toolset for efficient Redux development
+
+
+Toolkit
+Purpose
+The Redux Toolkit package is intended to be the standard way to write Redux logic. 
+It was originally created to help address three common concerns about Redux:
+
+"Configuring a Redux store is too complicated"
+"I have to add a lot of packages to get Redux to do anything useful"
+"Redux requires too much boilerplate code"
+
+
+mapStateToProps-  is a function used to provide store data to your componenet
+mapDispatchToProps- used to provide action creator as props to your compnent
+
+
+*******************************************
+
+   "react-redux": "^8.1.3",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+
+
+    reducer- handles all logical part
+
+
+
+    ***********************************************
+
+    Thunk vs saga
+
+
+https://cilans.net/javascript/which-is-better-redux-thunk-or-redux-saga/
+
+
+    A hook to access the redux store's state. 
+    This hook takes a selector function as an argument. 
+    The selector is called with the store state.
+
+
+
+
+
+
+
+    ************************************************************
+
+    
+******************************************************************************
+npx create-react-app my-app
+
+npm i  redux 
+npm i react-redux
+
+
+
+Middleware
+
+redux-thunk
+redux-saga
